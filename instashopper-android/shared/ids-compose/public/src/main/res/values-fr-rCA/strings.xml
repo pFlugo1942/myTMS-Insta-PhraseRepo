@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <string name="app_name">Exemple OTA - Freddy</string>
-    <string name="hello_world">Bonjour le monde - Freddy</string>
-    <string name="app_subtitle">de la phrase - Freddy</string>
+    <string name="app_name">Exemple OTA - Test de l'approche des tâches continues planifiées</string>
+    <string name="hello_world">Bonjour tout le monde - Test de l'approche des tâches continues planifiées</string>
+    <string name="app_subtitle">de Phrase - Test de l'approche du travail continu planifié</string>
 </resources>
