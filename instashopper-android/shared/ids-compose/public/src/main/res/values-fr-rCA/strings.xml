@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <string name="app_name">Exemple OTA - Test de l'approche des tâches continues planifiées</string>
-    <string name="hello_world">Bonjour tout le monde - Test de l'approche des tâches continues planifiées</string>
-    <string name="app_subtitle">de Phrase - Test de l'approche du travail continu planifié</string>
+    <string name="app_name">Exemple OTA - Source de mise à jour continue des tâches</string>
+    <string name="hello_world">Bonjour tout le monde - Source de mise à jour continue des tâches</string>
+    <string name="app_subtitle">de Phrase - Source de mise à jour continue du travail</string>
 </resources>
