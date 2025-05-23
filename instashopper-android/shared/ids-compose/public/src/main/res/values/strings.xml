@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <string name="app_name">OTA Example - Testing Scheduled Continuous Job approach</string>
-    <string name="hello_world">Hello World - Testing Scheduled Continuous Job approach</string>
-    <string name="app_subtitle">from Phrase - Testing Scheduled Continuous Job approach</string>
+    <string name="app_name">OTA Example - Continuous Job update source</string>
+    <string name="hello_world">Hello World - Continuous Job update source</string>
+    <string name="app_subtitle">from Phrase - Continuous Job update source</string>
 </resources>
