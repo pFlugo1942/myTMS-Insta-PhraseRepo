@@ -3,7 +3,7 @@ phrase:
 
   push:
     sources:
-      - file: ./source-locale/main/json-files/**/*.xml
+      - file: ./**/*.xml
         exclude:
           - '**/*/*[a-z]{2}-[a-z]{2}/*'  # Exclude any folders with locale codes (e.g., 'cs-cz', 'en-us')
           - '**/*/*[a-z]{2}/*'  # Exclude any folders with 2-letter locale codes (e.g., 'cs', 'en')
