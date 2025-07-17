@@ -14,7 +14,7 @@ phrase:
 
   pull:
     targets:
-      - file: ./translation-files/<locale_code>/<filename>.xml
+      - file: ./translation-files/<locale_code>/string.xml
         params:
           locale_id: es-US
           file_format: xml
