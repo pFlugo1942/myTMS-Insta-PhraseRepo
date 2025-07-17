@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <string name="app_name">Exemple OTA - Test de l'approche de travail continu programmé</string>
-    <string name="hello_world">Bonjour le monde - Test de l'approche de travail continu programmé</string>
-    <string name="app_subtitle">de Phrase - Test de l'approche de travail continu programmé</string>
+    <string name="app_name_one">Exemple OTA - Test de l'approche de travail continu programmé</string>
+    <string name="hello_world_one">Bonjour le monde - Test de l'approche de travail continu programmé</string>
+    <string name="app_subtitle_one">de Phrase - Test de l'approche de travail continu programmé</string>
 </resources>
