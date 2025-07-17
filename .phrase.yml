@@ -14,12 +14,12 @@ phrase:
 
   pull:
     targets:
-      - file: ./translation-files/de/<basename>.json
+      - file: ./translation-files/<targetLangAndroid>/<basename>.xml
         params:
           locale_id: es-US
           file_format: xml
 
-      - file: ./translation-files/es/<basename>.json
+      - file: ./translation-files/<targetLangAndroid>/<basename>.xml
         params:
           locale_id: fr-CA
           file_format: xml
