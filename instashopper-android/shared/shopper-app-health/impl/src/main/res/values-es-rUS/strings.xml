@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <string name="app_name">Ejemplo de OTA - Enfoque de trabajo continuo programado de prueba</string>
-    <string name="hello_world">Hola Mundo - Enfoque de trabajo continuo programado de prueba</string>
-    <string name="app_subtitle">de Frase - Enfoque de trabajo continuo programado de prueba</string>
+    <string name="app_name_two">Ejemplo de OTA - Enfoque de trabajo continuo programado de prueba</string>
+    <string name="hello_world_two">Hola Mundo - Enfoque de trabajo continuo programado de prueba</string>
+    <string name="app_subtitle_two">de Frase - Enfoque de trabajo continuo programado de prueba</string>
 </resources>
