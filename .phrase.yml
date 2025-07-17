@@ -4,13 +4,9 @@ phrase:
   push:
     sources:
       - file: ./source-locale/main/json-files/**/*.json
-        excludes:
-          - "**/fr*/**"
-          - "**/es*/**"
-          - "**/de*/**"
-          - "**/ja*/**"
-          - "**/zh*/**"
-          - "**/el*/**"
+        exclude:
+          - '**/*/*[a-z]{2}-[a-z]{2}/*'  # Exclude any folders with locale codes (e.g., 'cs-cz', 'en-us')
+          - '**/*/*[a-z]{2}/*'  # Exclude any folders with 2-letter locale codes (e.g., 'cs', 'en')
         params:
           file_format: simple_json
           locale_id: en
