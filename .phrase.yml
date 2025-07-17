@@ -3,12 +3,12 @@ phrase:
 
   push:
     sources:
-      - file: ./source-locale/main/json-files/**/*.json
+      - file: ./source-locale/main/json-files/**/*.xml
         exclude:
           - '**/*/*[a-z]{2}-[a-z]{2}/*'  # Exclude any folders with locale codes (e.g., 'cs-cz', 'en-us')
           - '**/*/*[a-z]{2}/*'  # Exclude any folders with 2-letter locale codes (e.g., 'cs', 'en')
         params:
-          file_format: simple_json
+          file_format: xml
           locale_id: en
           update_translations: true
 
@@ -17,9 +17,9 @@ phrase:
       - file: ./translation-files/de/<basename>.json
         params:
           locale_id: es-US
-          file_format: simple_json
+          file_format: xml
 
       - file: ./translation-files/es/<basename>.json
         params:
           locale_id: fr-CA
-          file_format: simple_json
+          file_format: xml
