@@ -14,12 +14,12 @@ phrase:
 
   pull:
     targets:
-      - file: ./translation-files/<locale_code>/string.xml
+      - file: ./**/*.xml
         params:
           locale_id: es-US
           file_format: xml
 
-      - file: ./translation-files/<locale_code>/string.xml
+      - file: ./**/*.xml
         params:
           locale_id: fr-CA
           file_format: xml
