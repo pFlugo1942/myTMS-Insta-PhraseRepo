@@ -16,20 +16,10 @@ phrase:
     targets:
       - file: ./translation-files/de/<basename>.json
         params:
-          locale_id: de
+          locale_id: es-US
           file_format: simple_json
 
       - file: ./translation-files/es/<basename>.json
         params:
-          locale_id: es
-          file_format: simple_json
-
-      - file: ./translation-files/el/<basename>.json
-        params:
-          locale_id: el
-          file_format: simple_json
-
-      - file: ./source-locale/main/json-files/<basename>.json
-        params:
-          locale_id: en
+          locale_id: fr-CA
           file_format: simple_json
