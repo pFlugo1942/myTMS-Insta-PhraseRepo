@@ -1,4 +1,4 @@
-name: Generate Phrase Config
+name: Generate Phrase Config New
 
 on:
   push:
