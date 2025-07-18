@@ -10,7 +10,7 @@ echo "  file_format: xml" >> ./push_config.yml
 echo "  push:" >> ./push_config.yml
 
 # Loop over all JSON files in nested directories
-find "$base_dir" -type f -name "*.json" | while read -r file_path; do
+find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     # Get the full folder path
     folder_path=$(dirname "$file_path")
     
@@ -30,7 +30,7 @@ find "$base_dir" -type f -name "*.json" | while read -r file_path; do
     # Add the dynamic push configuration to the YAML file
     echo "    - file: $folder_path/$file_name" >> ./push_config.yml
     echo "      params:" >> ./push_config.yml
-    echo "        file_format: simple_json" >> ./push_config.yml
+    echo "        file_format: xml" >> ./push_config.yml
     echo "        locale_id: en" >> ./push_config.yml
     echo "        update_translations: true" >> ./push_config.yml
     echo "        tags: $folder_name" >> ./push_config.yml
