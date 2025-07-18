@@ -9,27 +9,35 @@ echo "  project_id: 15d32bafd4ffe92f156bcca0549a07e6" >> ./push_config.yml
 echo "  file_format: xml" >> ./push_config.yml
 echo "  push:" >> ./push_config.yml
 
-# Iterate over all directories in the src folder and generate push/pull configurations with dynamic tags
-for dir in $base_dir; do
-  folder_name=$(basename "$dir")
-  
-  # Check if the parent directory (and any directories in the path) contains a locale code (e.g., "en", "fr", "en-US", "fr-CA")
-  if [[ "$dir" =~ /[a-z]{2}(-[a-z]{2})?/ ]]; then
-    # If the directory contains a locale code, skip this folder
-    echo "Skipping folder: $dir (locale code detected)"
-    continue
-  fi
+# Loop over all XML files in nested directories
+find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
+    # Get the full folder path
+    folder_path=$(dirname "$file_path")
+    
+    # Get the file name
+    file_name=$(basename "$file_path")
+    
+    # Get the folder name (the last directory in the path)
+    folder_name=$(basename "$folder_path")
 
-  # Append to push configuration
-  echo "    - file: $dir/**/*.xml" >> push_config.yml
-  echo "      params:" >> push_config.yml
-  echo "        file_format: xml" >> push_config.yml
-  echo "        locale_id: en" >> push_config.yml
-  echo "        update_translations: true" >> push_config.yml
-  echo "        tags: $folder_name" >> push_config.yml
+    # Check if the folder path contains a locale code (e.g., "en", "fr", "en-US", "fr-CA")
+    if [[ "$folder_path" =~ /[a-z]{2}(-[a-z]{2})?/ ]]; then
+        # If the folder path contains a locale code, skip this file
+        echo "Skipping file: $file_path (locale code detected)"
+        continue
+    fi
+
+    # Add the dynamic push configuration to the YAML file for non-locale folders
+    echo "    - file: $folder_path/$file_name" >> ./push_config.yml
+    echo "      params:" >> ./push_config.yml
+    echo "        file_format: xml" >> ./push_config.yml
+    echo "        locale_id: en" >> ./push_config.yml
+    echo "        update_translations: true" >> ./push_config.yml
+    echo "        tags: $folder_name" >> ./push_config.yml
+    echo "----------------------"
 
   # Append to pull configuration
-  echo "    - file: $dir/<locale_code>.xml" >> pull_config.yml
+  echo "    - file: $folder_path-<locale_code>/*.xml" >> pull_config.yml
   echo "      params:" >> pull_config.yml
   echo "        file_format: xml" >> pull_config.yml
   echo "        tags: $folder_name" >> pull_config.yml
