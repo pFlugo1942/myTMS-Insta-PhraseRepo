@@ -2,9 +2,9 @@
 
 # === GitHub Configuration ===
 REPO_OWNER="pFlugo1942"
-REPO_NAME="myTMS-Insta-PhraseRepo.git"
+REPO_NAME="myTMS-Insta-PhraseRepo"
 WORKFLOW_FILE_NAME="main-workflow.yml"  # Or use the workflow ID
-GITHUB_TOKEN="${GITHUB_TOKEN:?Missing GITHUB_TOKEN env var}"
+GITHUB_TOKEN="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"
 BRANCH="main"
 
 # === Call GitHub REST API to trigger workflow ===
