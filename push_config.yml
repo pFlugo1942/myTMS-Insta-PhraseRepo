@@ -1,0 +1,84 @@
+    - file: ./instashopper-android/shared/ids-compose//**/*.xml
+      params:
+        file_format: xml
+        locale_id: 15d32bafd4ffe92f156bcca0549a07e6
+        update_translations: true
+        tags: ids-compose
+    - file: ./instashopper-android/shared/shopper-achievement-celebration//**/*.xml
+      params:
+        file_format: xml
+        locale_id: 15d32bafd4ffe92f156bcca0549a07e6
+        update_translations: true
+        tags: shopper-achievement-celebration
+    - file: ./instashopper-android/shared/shopper-app-health//**/*.xml
+      params:
+        file_format: xml
+        locale_id: 15d32bafd4ffe92f156bcca0549a07e6
+        update_translations: true
+        tags: shopper-app-health
+    - file: ./instashopper-android/shared/shopper-audit//**/*.xml
+      params:
+        file_format: xml
+        locale_id: 15d32bafd4ffe92f156bcca0549a07e6
+        update_translations: true
+        tags: shopper-audit
+    - file: ./instashopper-android/shared/shopper-auth-passkey//**/*.xml
+      params:
+        file_format: xml
+        locale_id: 15d32bafd4ffe92f156bcca0549a07e6
+        update_translations: true
+        tags: shopper-auth-passkey
+    - file: ./instashopper-android/shared/shopper-automate-batch-trigger//**/*.xml
+      params:
+        file_format: xml
+        locale_id: 15d32bafd4ffe92f156bcca0549a07e6
+        update_translations: true
+        tags: shopper-automate-batch-trigger
+    - file: ./instashopper-android/shared/shopper-automate-cycle-counts//**/*.xml
+      params:
+        file_format: xml
+        locale_id: 15d32bafd4ffe92f156bcca0549a07e6
+        update_translations: true
+        tags: shopper-automate-cycle-counts
+    - file: ./instashopper-android/shared/shopper-automate-item-scan//**/*.xml
+      params:
+        file_format: xml
+        locale_id: 15d32bafd4ffe92f156bcca0549a07e6
+        update_translations: true
+        tags: shopper-automate-item-scan
+    - file: ./instashopper-android/shared/shopper-automate-locate//**/*.xml
+      params:
+        file_format: xml
+        locale_id: 15d32bafd4ffe92f156bcca0549a07e6
+        update_translations: true
+        tags: shopper-automate-locate
+    - file: ./instashopper-android/shared/shopper-automate-picking//**/*.xml
+      params:
+        file_format: xml
+        locale_id: 15d32bafd4ffe92f156bcca0549a07e6
+        update_translations: true
+        tags: shopper-automate-picking
+    - file: ./instashopper-android/shared/shopper-automate-scan-simulator//**/*.xml
+      params:
+        file_format: xml
+        locale_id: 15d32bafd4ffe92f156bcca0549a07e6
+        update_translations: true
+        tags: shopper-automate-scan-simulator
+    - file: ./instashopper-android/shared/shopper-automate-scan//**/*.xml
+      params:
+        file_format: xml
+        locale_id: 15d32bafd4ffe92f156bcca0549a07e6
+        update_translations: true
+        tags: shopper-automate-scan
+    - file: ./instashopper-android/shared/shopper-automate-staging//**/*.xml
+      params:
+        file_format: xml
+        locale_id: 15d32bafd4ffe92f156bcca0549a07e6
+        update_translations: true
+        tags: shopper-automate-staging
+    - file: ./instashopper-android/shared/shopper-automate-stow-help//**/*.xml
+      params:
+        file_format: xml
+        locale_id: 15d32bafd4ffe92f156bcca0549a07e6
+        update_translations: true
+        tags: shopper-automate-stow-help
