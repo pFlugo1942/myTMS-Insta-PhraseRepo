@@ -29,9 +29,4 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     echo "        tags: $folder_name" >> ./push_config.yml
     echo "----------------------"
 
-  # Append to pull configuration
-  echo "    - file: $folder_path-<locale_code>/*.xml" >> pull_config.yml
-  echo "      params:" >> pull_config.yml
-  echo "        file_format: xml" >> pull_config.yml
-  echo "        tags: $folder_name" >> pull_config.yml
 done
