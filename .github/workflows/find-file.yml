@@ -20,5 +20,5 @@ jobs:
       - name: Find the target file
         id: find_file
         run: |
-          FILE=$(find . -type f -name "*.txt" | head -n 1)
+          FILE=$(find . -type f -name "*.xml" | head -n 1)
           echo "file_path=$FILE" >> $GITHUB_OUTPUT
