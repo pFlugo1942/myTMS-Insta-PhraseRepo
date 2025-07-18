@@ -23,8 +23,8 @@ jobs:
 
       - name: Commit generated configuration
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.name "pFlugo1942"
+          git config --global user.email "freddy.lugo@phrase.com"
           git add push_config.yml
           git commit -m "Auto-generate Phrase config"
           git push
