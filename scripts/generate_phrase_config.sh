@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Specify the base directory
-base_dir="./**"
+base_dir="./instashopper-android/shared"
 
 # Initialize the configuration file
 echo "phrase:" > ./push_config.yml
