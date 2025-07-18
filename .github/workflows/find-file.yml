@@ -1,0 +1,24 @@
+# .github/workflows/find-file.yml
+name: Find File and Return Path
+
+on:
+  workflow_call:
+    outputs:
+      file-path:
+        description: "Full path of the found file"
+        value: ${{ jobs.find-file-job.outputs.file-path }}
+
+jobs:
+  find-file-job:
+    runs-on: ubuntu-latest
+    outputs:
+      file-path: ${{ steps.find_file.outputs.file_path }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Find the target file
+        id: find_file
+        run: |
+          FILE=$(find . -type f -name "*.txt" | head -n 1)
+          echo "file_path=$FILE" >> $GITHUB_OUTPUT
