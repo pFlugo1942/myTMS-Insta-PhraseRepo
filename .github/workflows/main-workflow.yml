@@ -1,0 +1,18 @@
+# .github/workflows/main-workflow.yml
+name: Main Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  call-find-file:
+    uses: ./.github/workflows/find-file.yml
+    with: {}
+
+  use-found-file:
+    needs: call-find-file
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the file path
+        run: |
+          echo "Found file path: ${{ needs.call-find-file.outputs.file-path }}"
