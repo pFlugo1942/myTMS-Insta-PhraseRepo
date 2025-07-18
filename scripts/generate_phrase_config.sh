@@ -20,10 +20,10 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     # Get the folder name (the last directory in the path)
     folder_name=$(basename "$folder_path")
 
-    # Check if the folder name matches a locale code pattern (e.g., "en", "fr", "cs", "en-US", etc.)
-    if [[ "$folder_name" =~ ^[a-z]{2}(-[a-z]{2})?$ ]]; then
-        # If it matches the pattern, skip this folder
-        echo "Skipping folder: $folder_name (locale code detected)"
+    # Check if the folder path includes a locale code (e.g., "en", "fr", "en-US", "fr-CA")
+    if [[ "$folder_path" =~ /[a-z]{2}(-[a-z]{2})?/ ]]; then
+        # If the folder path contains a locale code, skip this folder
+        echo "Skipping folder: $folder_path (locale code detected)"
         continue
     fi
 
