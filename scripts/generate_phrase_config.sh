@@ -1,7 +1,16 @@
 #!/bin/bash
 
+# Specify the base directory
+base_dir="./instashopper-android/shared"
+
+# Initialize the configuration file
+echo "phrase:" > ./push_config.yml
+echo "  project_id: 15d32bafd4ffe92f156bcca0549a07e6" >> ./push_config.yml
+echo "  file_format: xml" >> ./push_config.yml
+echo "  push:" >> ./push_config.yml
+
 # Iterate over all directories in the src folder and generate push/pull configurations with dynamic tags
-for dir in ./instashopper-android/shared/*/; do
+for dir in $base_dir; do
   folder_name=$(basename "$dir")
   
   # Check if the parent directory (and any directories in the path) contains a locale code (e.g., "en", "fr", "en-US", "fr-CA")
@@ -15,7 +24,7 @@ for dir in ./instashopper-android/shared/*/; do
   echo "    - file: $dir/**/*.xml" >> push_config.yml
   echo "      params:" >> push_config.yml
   echo "        file_format: xml" >> push_config.yml
-  echo "        locale_id: 15d32bafd4ffe92f156bcca0549a07e6" >> push_config.yml
+  echo "        locale_id: en" >> push_config.yml
   echo "        update_translations: true" >> push_config.yml
   echo "        tags: $folder_name" >> push_config.yml
 
