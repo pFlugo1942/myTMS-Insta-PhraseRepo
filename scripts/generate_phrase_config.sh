@@ -10,7 +10,7 @@ echo "  file_format: xml" >> ./push_config.yml
 echo "  push:" >> ./push_config.yml
 
 # Loop over all JSON files in nested directories
-find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
+find "$base_dir" -type f -name "*.json" | while read -r file_path; do
     # Get the full folder path
     folder_path=$(dirname "$file_path")
     
@@ -19,6 +19,13 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     
     # Get the folder name (the last directory in the path)
     folder_name=$(basename "$folder_path")
+
+    # Check if the folder name matches a locale code pattern (e.g., "en", "fr", "cs", "en-US", etc.)
+    if [[ "$folder_name" =~ ^[a-z]{2}(-[a-z]{2})?$ ]]; then
+        # If it matches the pattern, skip this folder
+        echo "Skipping folder: $folder_name (locale code detected)"
+        continue
+    fi
 
     # Add the dynamic push configuration to the YAML file
     echo "    - file: $folder_path/$file_name" >> ./push_config.yml
