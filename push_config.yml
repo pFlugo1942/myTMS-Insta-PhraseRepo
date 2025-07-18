@@ -1,0 +1,256 @@
+phrase:
+  project_id: 15d32bafd4ffe92f156bcca0549a07e6
+  file_format: xml
+  push:
+    - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values
+    - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-es-rUS
+    - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-fr-rCA
+    - file: ./instashopper-android/shared/shopper-automate-batch-trigger/impl/src/main/res/values/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values
+    - file: ./instashopper-android/shared/shopper-automate-batch-trigger/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-es-rUS
+    - file: ./instashopper-android/shared/shopper-automate-batch-trigger/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-fr-rCA
+    - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values
+    - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-es-rUS
+    - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-fr-rCA
+    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values
+    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-es-rUS
+    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-fr-rCA
+    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values
+    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-es-rUS
+    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-fr-rCA
+    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values
+    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-es-rUS
+    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-fr-rCA
+    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values
+    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-es-rUS
+    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-fr-rCA
+    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values
+    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-es-rUS
+    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-fr-rCA
+    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values
+    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-es-rUS
+    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-fr-rCA
+    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values
+    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-es-rUS
+    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-fr-rCA
+    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values
+    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-es-rUS
+    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-fr-rCA
+    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values
+    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-es-rUS
+    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-fr-rCA
+    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values
+    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-es-rUS
+    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-fr-rCA
+    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values
+    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-es-rUS
+    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: simple_json
+        locale_id: en
+        update_translations: true
+        tags: values-fr-rCA
