@@ -26,7 +26,7 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     grandparent_folder=$(basename "$(dirname "$(dirname "$folder_path")")")  # e.g., ui
 
     # Generate a unique identifier for this folder (using the counter)
-    unique_id="$folder_name - $counter"
+    unique_id="$grandparent_folder/$folder_name - $counter"
     
     # Increment the counter
     ((counter++))
