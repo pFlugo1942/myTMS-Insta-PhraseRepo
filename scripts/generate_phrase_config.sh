@@ -31,6 +31,7 @@ find "$base_dir" -type f -name "*.xml" \
     
     # Increment the counter
     ((counter++))
+    
     # Add the dynamic push configuration to the YAML file for non-locale folders
     echo "    - file: $folder_path/$file_name" >> ./push_config.yml
     echo "      params:" >> ./push_config.yml
