@@ -13,8 +13,7 @@ echo "  push:" >> ./push_config.yml
 counter=1
 
 # Loop over all JSON files in nested directories
-find "$base_dir" -type f -name "*.xml" \
-  ! -regex '.*\/values-[a-z][a-z]\(-r[A-Z][A-Z]\)\?\/.*' | while read -r file_path; do
+find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     # Get the full folder path
     folder_path=$(dirname "$file_path")
     
