@@ -26,7 +26,7 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     # Check if the folder path contains a locale code like "values-es-rUS", "values-fr-rCA", etc.
     if [[ "$folder_path" =~ /values-[a-z]{2}-r[A-Z]{2}/ ]]; then
         # If the folder path matches the pattern for a locale code, skip this file
-        echo "Skipping file: $file_path (locale code detected)"
+        echo "Skipping file: $folder_path (locale code detected)"
         continue
     fi
 
