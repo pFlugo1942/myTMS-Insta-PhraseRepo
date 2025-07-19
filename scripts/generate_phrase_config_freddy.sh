@@ -1,30 +1,40 @@
 #!/bin/bash
 
-# Set the root directory to search and output file name
-ROOT_DIR="./instashopper-android/shared"
-OUTPUT_FILE="push_config_freddy.yml"
+# Specify the base directory
+base_dir="./instashopper-android/shared"
 
-# Define project ID (replace with your real one if needed)
-PHRASE_PROJECT_ID="15d32bafd4ffe92f156bcca0549a07e6"
+# Initialize the configuration file
+echo "phrase:" > ./push_config_freddy.yml
+echo "  project_id: 15d32bafd4ffe92f156bcca0549a07e6" >> ./push_config.yml
+echo "  file_format: xml" >> ./push_config_freddy.yml
+echo "  push:" >> ./push_config_freddy.yml
 
-# Begin writing YAML
-cat > "$OUTPUT_FILE" <<EOF
-phrase:
-  project_id: $PHRASE_PROJECT_ID
-  push:
-    sources:
-EOF
+# Initialize an ID counter for unique identifiers
+counter=1
 
-# Find .xml files NOT in locale-specific 'values-' directories (like values-es, values-fr-rCA, etc.)
-while IFS= read -r xml_file; do
-  # Append to YAML with formatting
-  cat >> "$OUTPUT_FILE" <<EOF
-    - file: $xml_file
-      params:
-        file_format: android_xml
-        locale_id: en
-        update_translations: true
-EOF
-done < <(find "$ROOT_DIR" -type f -name "*.xml")
+# Loop over all JSON files in nested directories
+find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
+    # Get the full folder path
+    folder_path=$(dirname "$file_path")
+    
+    # Get the file name
+    file_name=$(basename "$file_path")
+    
+    # Get the folder name (the last directory in the path)
+    folder_name=$(basename "$folder_path")
 
-echo "✅ push_config_freddy.yml generated successfully."
+    # Generate a unique identifier for this folder (using the counter)
+    unique_id="folder_$counter"
+    
+    # Increment the counter
+    ((counter++))
+    # Add the dynamic push configuration to the YAML file for non-locale folders
+    echo "    - file: $folder_path/$file_name" >> ./push_config_freddy.yml
+    echo "      params:" >> ./push_config_freddy.yml
+    echo "        file_format: xml" >> ./push_config_freddy.yml
+    echo "        locale_id: en" >> ./push_config_freddy.yml
+    echo "        update_translations: true" >> ./push_config_freddy.yml
+    echo "        tags: $folder_name" >> ./push_config_freddy.yml
+    echo "        unique_id: $unique_id" >> ./push_config_freddy.yml
+    echo "----------------------"
+done
