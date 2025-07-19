@@ -38,8 +38,7 @@ while IFS= read -r xml_file; do
         locale_id: en
         update_translations: true
 EOF
-done < <(find "$ROOT_DIR" -type f -name "*.xml" \
-  ! -regex '.*/values-[a-z][a-z]\(-r[A-Z][A-Z]\)\?(/.*)?')
+done < <(find "$ROOT_DIR" -type f -name "*.xml")
 
 echo "📦 Found $count XML files for inclusion."
 echo "✅ YAML configuration successfully written to: $OUTPUT_FILE"
