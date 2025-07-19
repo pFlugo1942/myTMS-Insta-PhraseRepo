@@ -5,7 +5,7 @@ base_dir="./instashopper-android/shared"
 
 # Initialize the configuration file
 echo "phrase:" > ./push_config_freddy.yml
-echo "  project_id: 15d32bafd4ffe92f156bcca0549a07e6" >> ./push_config.yml
+echo "  project_id: 15d32bafd4ffe92f156bcca0549a07e6" >> ./push_config_freddy.yml
 echo "  file_format: xml" >> ./push_config_freddy.yml
 echo "  push:" >> ./push_config_freddy.yml
 
