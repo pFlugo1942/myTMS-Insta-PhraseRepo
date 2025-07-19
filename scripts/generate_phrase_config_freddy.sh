@@ -1,67 +1,31 @@
 #!/bin/bash
 
-# Define constants
+# Set the root directory to search and output file name
 ROOT_DIR="./instashopper-android/shared"
-SOURCE_LOCALE="en"
-PHRASE_PROJECT_ID="15d32bafd4ffe92f156bcca0549a07e6"
 OUTPUT_FILE="push_config_freddy.yml"
 
-# Temp arrays to store source and translation file paths
-declare -a source_files
-declare -A translation_targets
+# Define project ID (replace with your real one if needed)
+PHRASE_PROJECT_ID="15d32bafd4ffe92f156bcca0549a07e6"
 
-# Function to detect and extract locale from path (for demonstration)
-extract_locale() {
-  local filepath="$1"
-  if [[ "$filepath" =~ translation-files/([a-z]{2})/ ]]; then
-    echo "${BASH_REMATCH[1]}"
-  fi
-}
+# Begin writing YAML
+cat > "$OUTPUT_FILE" <<EOF
+phrase:
+  project_id: $PHRASE_PROJECT_ID
+  push:
+    sources:
+EOF
 
-# Find files excluding those in locale-specific values-* directories
-while IFS= read -r file; do
-  source_files+=("$file")
-
-  # Create translation target entries for demonstration
-  # You can modify this to dynamically detect available locales
-  for locale in de es el; do
-    # Replace ./source-locale/... with ./translation-files/<locale>/...
-    relative_path="${file#./source-locale/}"
-    translation_path="./translation-files/$locale/$relative_path"
-    translation_targets["$translation_path"]="$locale"
-  done
-
-done < <(find "$ROOT_DIR/source-locale" -type f ! -regex '.*/values-[a-z][a-z]\(-r[A-Z][A-Z]\)\?(/.*)?')
-
-# Start writing to .phrase.yml
-echo "phrase:" > "$OUTPUT_FILE"
-echo "  project_id: $PHRASE_PROJECT_ID" >> "$OUTPUT_FILE"
-echo "  push:" >> "$OUTPUT_FILE"
-echo "    sources:" >> "$OUTPUT_FILE"
-
-# Write source files
-for src in "${source_files[@]}"; do
-cat >> "$OUTPUT_FILE" <<EOF
-    - file: $src
+# Find .xml files NOT in locale-specific 'values-' directories (like values-es, values-fr-rCA, etc.)
+while IFS= read -r xml_file; do
+  # Append to YAML with formatting
+  cat >> "$OUTPUT_FILE" <<EOF
+    - file: $xml_file
       params:
-        file_format: simple_json
-        locale_id: $SOURCE_LOCALE
+        file_format: android_xml
+        locale_id: en
         update_translations: true
 EOF
-done
+done < <(find "$ROOT_DIR" -type f -name "*.xml" \
+  ! -regex '.*/values-[a-z][a-z]\(-r[A-Z][A-Z]\)\?(/.*)?')
 
-# Write pull targets
-echo "  pull:" >> "$OUTPUT_FILE"
-echo "    targets:" >> "$OUTPUT_FILE"
-
-for path in "${!translation_targets[@]}"; do
-  locale="${translation_targets[$path]}"
-cat >> "$OUTPUT_FILE" <<EOF
-    - file: $path
-      params:
-        locale_id: $locale
-        file_format: simple_json
-EOF
-done
-
-echo ".phrase.yml generated successfully."
+echo "✅ push_config_freddy.yml generated successfully."
