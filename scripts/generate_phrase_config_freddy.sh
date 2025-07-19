@@ -11,7 +11,6 @@ OUTPUT_FILE="new_push_config.yml"
 PHRASE_PROJECT_ID="15d32bafd4ffe92f156bcca0549a07e6"
 
 echo "🔍 Starting .xml file search in '$ROOT_DIR'..."
-echo "🧹 Excluding locale-specific directories like values-es, values-fr-rCA, etc."
 echo "📄 Output YAML will be written to: $OUTPUT_FILE"
 
 # Begin writing YAML
@@ -25,7 +24,7 @@ EOF
 # Counter for matched files
 count=0
 
-# Find .xml files NOT in locale-specific 'values-' directories (like values-es, values-fr-rCA, etc.)
+# Find all .xml files (no exclusions)
 while IFS= read -r xml_file; do
   echo "✅ Including file: $xml_file"
   ((count++))
