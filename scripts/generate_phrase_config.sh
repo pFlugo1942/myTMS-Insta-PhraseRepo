@@ -24,7 +24,7 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     folder_name=$(basename "$folder_path")
 
     # Generate a unique identifier for this folder (using the counter)
-    unique_id="folder_$counter"
+    unique_id="$folder_name - $counter"
     
     # Increment the counter
     ((counter++))
