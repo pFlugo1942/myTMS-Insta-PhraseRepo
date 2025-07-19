@@ -23,21 +23,18 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     # Get the folder name (the last directory in the path)
     folder_name=$(basename "$folder_path")
 
-    grandparent_folder=$(basename "$(dirname "$(dirname "$folder_path")")")  # e.g., ui
-
     # Generate a unique identifier for this folder (using the counter)
-    unique_id="$grandparent_folder/$folder_name - $counter"
+    unique_id="folder_$counter"
     
     # Increment the counter
     ((counter++))
-    
     # Add the dynamic push configuration to the YAML file for non-locale folders
     echo "    - file: $folder_path/$file_name" >> ./push_config.yml
     echo "      params:" >> ./push_config.yml
     echo "        file_format: xml" >> ./push_config.yml
     echo "        locale_id: en" >> ./push_config.yml
     echo "        update_translations: true" >> ./push_config.yml
-    echo "        tags: $grandparent_folder" >> ./push_config.yml
+    echo "        tags: $folder_name" >> ./push_config.yml
     echo "        unique_id: $unique_id" >> ./push_config.yml
     echo "----------------------"
 done
