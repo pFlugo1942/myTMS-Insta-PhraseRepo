@@ -25,7 +25,6 @@ while IFS= read -r xml_file; do
         locale_id: en
         update_translations: true
 EOF
-done < <(find "$ROOT_DIR" -type f -name "*.xml" \
-  ! -regex '.*/values-[a-z][a-z]\(-r[A-Z][A-Z]\)\?(/.*)?')
+done < <(find "$ROOT_DIR" -type f -name "*.xml")
 
 echo "✅ push_config_freddy.yml generated successfully."
