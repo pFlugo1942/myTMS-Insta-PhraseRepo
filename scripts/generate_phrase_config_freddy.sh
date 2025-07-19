@@ -35,7 +35,7 @@ while IFS= read -r xml_file; do
   {
     echo "    - file: $xml_file"
     echo "      params:"
-    echo "        file_format: android_xml"
+    echo "        file_format: xml"
     echo "        locale_id: en"
     echo "        update_translations: true"
   } >> "$OUTPUT_FILE"
