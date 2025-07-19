@@ -4,10 +4,10 @@
 base_dir="./instashopper-android/shared"
 
 # Initialize the configuration file
-echo "phrase:" > ./push_config_freddy.yml
-echo "  project_id: 15d32bafd4ffe92f156bcca0549a07e6" >> ./push_config_freddy.yml
-echo "  file_format: xml" >> ./push_config_freddy.yml
-echo "  push:" >> ./push_config_freddy.yml
+echo "phrase:" > ./freddy_push_config.yml
+echo "  project_id: 15d32bafd4ffe92f156bcca0549a07e6" >> ./freddy_push_config.yml
+echo "  file_format: xml" >> ./freddy_push_config.yml
+echo "  push:" >> ./freddy_push_config.yml
 
 # Initialize an ID counter for unique identifiers
 counter=1
@@ -29,12 +29,12 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     # Increment the counter
     ((counter++))
     # Add the dynamic push configuration to the YAML file for non-locale folders
-    echo "    - file: $folder_path/$file_name" >> ./push_config_freddy.yml
-    echo "      params:" >> ./push_config_freddy.yml
-    echo "        file_format: xml" >> ./push_config_freddy.yml
-    echo "        locale_id: en" >> ./push_config_freddy.yml
-    echo "        update_translations: true" >> ./push_config_freddy.yml
-    echo "        tags: $folder_name" >> ./push_config_freddy.yml
-    echo "        unique_id: $unique_id" >> ./push_config_freddy.yml
+    echo "    - file: $folder_path/$file_name" >> ./freddy_push_config.yml
+    echo "      params:" >> ./freddy_push_config.yml
+    echo "        file_format: xml" >> ./freddy_push_config.yml
+    echo "        locale_id: en" >> ./freddy_push_config.yml
+    echo "        update_translations: true" >> ./freddy_push_config.yml
+    echo "        tags: $folder_name" >> ./freddy_push_config.yml
+    echo "        unique_id: $unique_id" >> ./freddy_push_config.yml
     echo "----------------------"
 done
