@@ -23,6 +23,13 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     # Get the folder name (the last directory in the path)
     folder_name=$(basename "$folder_path")
 
+    # Check if the folder path contains a locale code like "values-es-rUS", "values-fr-rCA", etc.
+    if [[ "$folder_path" =~ /values-[a-z]{2}-r[A-Z]{2}/ ]]; then
+        # If the folder path matches the pattern for a locale code, skip this file
+        echo "Skipping file: $file_path (locale code detected)"
+        continue
+    fi
+
     # Generate a unique identifier for this folder (using the counter)
     unique_id="$folder_name - $counter"
     
