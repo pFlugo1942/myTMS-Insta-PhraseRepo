@@ -23,6 +23,7 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     # Get the folder name (the last directory in the path)
     folder_name=$(basename "$folder_path")
 
+    grandparent_folder=$(basename "$(dirname "$(dirname "$folder_path")")")  # e.g., ui
 
     # Generate a unique identifier for this folder (using the counter)
     unique_id="$folder_name - $counter"
@@ -35,7 +36,7 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     echo "        file_format: xml" >> ./push_config.yml
     echo "        locale_id: en" >> ./push_config.yml
     echo "        update_translations: true" >> ./push_config.yml
-    echo "        tags: $folder_name" >> ./push_config.yml
+    echo "        tags: $grandparent_folder" >> ./push_config.yml
     echo "        unique_id: $unique_id" >> ./push_config.yml
     echo "----------------------"
 done
