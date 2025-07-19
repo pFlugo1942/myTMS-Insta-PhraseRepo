@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define constants
-ROOT_DIR="."
+ROOT_DIR="./instashopper-android/shared"
 SOURCE_LOCALE="en"
 PHRASE_PROJECT_ID="15d32bafd4ffe92f156bcca0549a07e6"
 OUTPUT_FILE="push_config_freddy.yml"
