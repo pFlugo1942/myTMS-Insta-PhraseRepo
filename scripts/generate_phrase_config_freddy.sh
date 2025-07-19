@@ -10,34 +10,38 @@ OUTPUT_FILE="new_push_config.yml"
 # Define project ID (replace with your real one if needed)
 PHRASE_PROJECT_ID="15d32bafd4ffe92f156bcca0549a07e6"
 
-echo "🔍 Starting .xml file search in '$ROOT_DIR'..."
-echo "📄 Output YAML will be written to: $OUTPUT_FILE"
+echo "🔧 Starting script..."
+echo "🔍 Searching for .xml files under: $ROOT_DIR"
+echo "🛠  Creating output file: $OUTPUT_FILE"
+echo "🪪 Using Phrase project ID: $PHRASE_PROJECT_ID"
+echo
 
 # Begin writing YAML
-cat > "$OUTPUT_FILE" <<EOF
-phrase:
-  project_id: $PHRASE_PROJECT_ID
-  push:
-    sources:
-EOF
+{
+  echo "phrase:"
+  echo "  project_id: $PHRASE_PROJECT_ID"
+  echo "  push:"
+  echo "    sources:"
+} > "$OUTPUT_FILE"
 
-# Counter for matched files
+# Counter for how many XML files we find
 count=0
 
-# Find all .xml files (no exclusions)
+# Find all .xml files
 while IFS= read -r xml_file; do
-  echo "✅ Including file: $xml_file"
+  echo "📂 Found: $xml_file"
   ((count++))
 
-  # Append to YAML with formatting
-  cat >> "$OUTPUT_FILE" <<EOF
-    - file: $xml_file
-      params:
-        file_format: android_xml
-        locale_id: en
-        update_translations: true
-EOF
+  {
+    echo "    - file: $xml_file"
+    echo "      params:"
+    echo "        file_format: android_xml"
+    echo "        locale_id: en"
+    echo "        update_translations: true"
+  } >> "$OUTPUT_FILE"
+
 done < <(find "$ROOT_DIR" -type f -name "*.xml")
 
-echo "📦 Found $count XML files for inclusion."
-echo "✅ YAML configuration successfully written to: $OUTPUT_FILE"
+echo
+echo "✅ Total .xml files included: $count"
+echo "📄 push_config_freddy.yml successfully generated."
