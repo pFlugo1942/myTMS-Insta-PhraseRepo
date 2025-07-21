@@ -7,7 +7,6 @@ PROJECT_ID="15d32bafd4ffe92f156bcca0549a07e6"
 SOURCE_PATH="./instashopper-android/shared/**/*.xml"
 TARGET_LOCALES=("es-rUS" "fr-rCA")
 IGNORE_LOCALE_FOLDERS=("values-es-rUS" "values-fr-rCA")
-ROOT_DIR="./instashopper-android/shared"
 
 # Start writing the config
 cat <<EOF > .freddy-phrase.yml
@@ -22,17 +21,6 @@ phrase:
           update_translations: true
     ignore:
 EOF
-
-# Find .xml files NOT in locale-specific 'values-' directories (like values-es, values-fr-rCA, etc.)
-while IFS= read -r xml_file; do
-  # Append to YAML with formatting
-      - file: $xml_file
-        params:
-          locale_id: en
-          file_format: xml
-          update_translations: true
-EOF
-done < <(find "$ROOT_DIR" -type f -name "*.xml")
 
 # Add ignored folders
 for locale in "${IGNORE_LOCALE_FOLDERS[@]}"; do
