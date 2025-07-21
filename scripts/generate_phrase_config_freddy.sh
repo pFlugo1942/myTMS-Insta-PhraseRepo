@@ -1,47 +1,45 @@
 #!/bin/bash
 
-# Enable strict error handling
-set -euo pipefail
+# Set your Phrase project ID
+PROJECT_ID="15d32bafd4ffe92f156bcca0549a07e6"
 
-# Set the root directory to search and output file name
-ROOT_DIR="./instashopper-android/shared"
-OUTPUT_FILE="new_push_config.yml"
+# Define locales and paths
+SOURCE_PATH="./instashopper-android/shared/**/*.xml"
+TARGET_LOCALES=("es-rUS" "fr-rCA")
+IGNORE_LOCALE_FOLDERS=("values-es-rUS" "values-fr-rCA")
 
-# Define project ID (replace with your real one if needed)
-PHRASE_PROJECT_ID="15d32bafd4ffe92f156bcca0549a07e6"
+# Start writing the config
+cat <<EOF > .phrase.yml
+phrase:
+  project_id: $PROJECT_ID
+  file_format: simple_json
+  push:
+    sources:
+      - file: $SOURCE_PATH
+        params:
+          locale_id: en
+          update_translations: true
+    ignore:
+EOF
 
-echo "🔧 Starting script..."
-echo "🔍 Searching for .xml files under: $ROOT_DIR"
-echo "🛠  Creating output file: $OUTPUT_FILE"
-echo "🪪 Using Phrase project ID: $PHRASE_PROJECT_ID"
-echo
+# Add ignored folders
+for locale in "${IGNORE_LOCALE_FOLDERS[@]}"; do
+  echo "      - '**/${locale}/**'" >> .phrase.yml
+done
 
-# Begin writing YAML
-{
-  echo "phrase:"
-  echo "  project_id: $PHRASE_PROJECT_ID"
-  echo "  push:"
-  echo "    sources:"
-} > "$OUTPUT_FILE"
+# Add pull targets
+cat <<EOF >> .phrase.yml
+  pull:
+    targets:
+EOF
 
-# Counter for how many XML files we find
-count=0
+for locale in "${TARGET_LOCALES[@]}"; do
+  cat <<EOF >> .phrase.yml
+      - file: ./src/content/${locale}/main.json
+        params:
+          locale_id: ${locale}
+          file_format: simple_json
+EOF
+done
 
-# Find all .xml files
-while IFS= read -r xml_file; do
-  echo "📂 Found: $xml_file"
-  ((count++))
-
-  {
-    echo "    - file: $xml_file"
-    echo "      params:"
-    echo "        file_format: xml"
-    echo "        locale_id: en"
-    echo "        update_translations: true"
-  } >> "$OUTPUT_FILE"
-
-done < <(find "$ROOT_DIR" -type f -name "*.xml")
-
-echo
-echo "✅ Total .xml files included: $count"
-echo "📄 push_config_freddy.yml successfully generated."
+echo "✅ .phrase.yml has been generated."
