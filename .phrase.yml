@@ -1,22 +1,25 @@
 phrase:
   project_id: 15d32bafd4ffe92f156bcca0549a07e6
-  file_format: xml
+
   push:
     sources:
-      - file: ./instashopper-android/shared/**/*.xml
+      - file: ./**/*.xml
+        exclude:
+          - '**/*/*[a-z]{2}-[a-z]{2}/*'  # Exclude any folders with locale codes (e.g., 'cs-cz', 'en-us')
+          - '**/*/*[a-z]{2}/*'  # Exclude any folders with 2-letter locale codes (e.g., 'cs', 'en')
         params:
+          file_format: xml
           locale_id: en
           update_translations: true
-    ignore:
-      - '**/values-es-rUS/**'
-      - '**/values-fr-rCA/**'
+
   pull:
     targets:
-      - file: ./instashopper-android/shared/**/content/es-rUS/strings.xml
+      - file: ./translation-files/<locale_code>/string.xml
         params:
-          locale_id: es-rUS
+          locale_id: es-US
           file_format: xml
-      - file: ./instashopper-android/shared/**/content/fr-rCA/strings.xml
+
+      - file: ./translation-files/<locale_code>/string.xml
         params:
-          locale_id: fr-rCA
+          locale_id: fr-CA
           file_format: xml
