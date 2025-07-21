@@ -24,22 +24,34 @@ EOF
 
 # Add ignored folders
 for locale in "${IGNORE_LOCALE_FOLDERS[@]}"; do
-  echo "      - '**/${locale}/**'" >> .phrase.yml
+  echo "      - '**/${locale}/**'" >> .freddy-phrase.yml
 done
 
 # Add pull targets
-cat <<EOF >> .phrase.yml
+cat <<EOF >> .freddy-phrase.yml
   pull:
     targets:
 EOF
 
 for locale in "${TARGET_LOCALES[@]}"; do
-  cat <<EOF >> .phrase.yml
-      - file: ./src/content/${locale}/main.json
+  cat <<EOF >> .freddy-phrase.yml
+      - file: ./instashopper-android/shared/**/content/${locale}/strings.xml
         params:
           locale_id: ${locale}
           file_format: xml
 EOF
 done
 
-echo "✅ .phrase.yml has been generated."
+# Confirm file creation
+echo "✅ .freddy-phrase.yml has been generated."
+
+# Git operations
+git add .freddy-phrase.yml
+
+if git diff --cached --quiet; then
+  echo "ℹ️  No changes to commit."
+else
+  git commit -m "Add/update .freddy-phrase.yml for Phrase Strings integration"
+  echo "✅ Changes committed to Git."
+fi
+
