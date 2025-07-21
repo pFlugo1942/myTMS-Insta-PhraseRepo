@@ -19,6 +19,7 @@ phrase:
         params:
           locale_id: en
           update_translations: true
+          tags: "test-tag"
     ignore:
 EOF
 
