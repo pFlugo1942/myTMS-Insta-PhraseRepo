@@ -1,22 +1,22 @@
 phrase:
   project_id: 15d32bafd4ffe92f156bcca0549a07e6
   file_format: xml
-  
   push:
     sources:
-      - file: ./**/*.xml  # Match all .json files in nested folders
-        exclude:
-          - '**/*/*[a-z]{2}-[a-z]{2}/*'  # Exclude any folders with locale codes (e.g., 'cs-cz', 'en-us')
-          - '**/*/*[a-z]{2}/*'  # Exclude any folders with 2-letter locale codes (e.g., 'cs', 'en')
+      - file: ./instashopper-android/shared/**/*.xml
         params:
-          file_format: xml
           locale_id: en
           update_translations: true
-          tags: "{{ folder_name }}"  # Use the folder name as the tag (handled by an external process or script)
-  
+    ignore:
+      - '**/values-es-rUS/**'
+      - '**/values-fr-rCA/**'
   pull:
     targets:
-      - file: ./**/values-<locale_code>/strings.xml  # Match all target .json files in nested folders based on locale code
+      - file: ./instashopper-android/shared/**/content/es-rUS/strings.xml
         params:
+          locale_id: es-rUS
           file_format: xml
-          tags: "{{ folder_name }}"  # Use the folder name as the tag (handled by an external process or script)
+      - file: ./instashopper-android/shared/**/content/fr-rCA/strings.xml
+        params:
+          locale_id: fr-rCA
+          file_format: xml
