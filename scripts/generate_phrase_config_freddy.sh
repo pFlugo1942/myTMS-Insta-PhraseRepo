@@ -9,10 +9,10 @@ TARGET_LOCALES=("es-rUS" "fr-rCA")
 IGNORE_LOCALE_FOLDERS=("values-es-rUS" "values-fr-rCA")
 
 # Start writing the config
-cat <<EOF > .phrase.yml
+cat <<EOF > .freddy-phrase.yml
 phrase:
   project_id: $PROJECT_ID
-  file_format: simple_json
+  file_format: xml
   push:
     sources:
       - file: $SOURCE_PATH
@@ -38,7 +38,7 @@ for locale in "${TARGET_LOCALES[@]}"; do
       - file: ./src/content/${locale}/main.json
         params:
           locale_id: ${locale}
-          file_format: simple_json
+          file_format: xml
 EOF
 done
 
