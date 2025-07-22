@@ -3,8 +3,8 @@ phrase:
   file_format: xml
   push:
     - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: folder_1
+    params:
+      file_format: xml
+      locale_id: en
+      update_translations: true
+      tags: folder_1
