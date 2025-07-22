@@ -80,6 +80,7 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     echo "    - file: $folder_path-<android_code>/$file_name" >> ./test_push_config.yml
     echo "      params:" >> ./test_push_config.yml
     echo "        file_format: xml" >> ./test_push_config.yml
+    echo "        locale_id: <locale_code>" >> ./test_push_config.yml
     echo "        tags: $unique_id" >> ./test_push_config.yml
     echo "----------------------"
 done
