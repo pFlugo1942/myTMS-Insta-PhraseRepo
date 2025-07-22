@@ -8,6 +8,7 @@ echo "phrase:" > ./test_push_config.yml
 echo "  project_id: 15d32bafd4ffe92f156bcca0549a07e6" >> ./test_push_config.yml
 echo "  file_format: xml" >> ./test_push_config.yml
 echo "  push:" >> ./test_push_config.yml
+echo "    sources:" >> ./test_push_config.yml
 
 # Initialize an ID counter for unique identifiers
 counter=1
@@ -41,7 +42,7 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     echo "        file_format: xml" >> ./test_push_config.yml
     echo "        locale_id: en" >> ./test_push_config.yml
     echo "        update_translations: true" >> ./test_push_config.yml
-    echo "        tags: $folder_name $unique_id" >> ./test_push_config.yml
+    echo "        tags: $unique_id" >> ./test_push_config.yml
     echo "        unique_id: $unique_id" >> ./test_push_config.yml
     echo "----------------------"
 done
@@ -79,7 +80,7 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     echo "    - file: $folder_path-<locale_code>/$file_name" >> ./test_push_config.yml
     echo "      params:" >> ./test_push_config.yml
     echo "        file_format: xml" >> ./test_push_config.yml
-    echo "        tags: $folder_name $unique_id" >> ./test_push_config.yml
+    echo "        tags: $unique_id" >> ./test_push_config.yml
     echo "----------------------"
 done
 
