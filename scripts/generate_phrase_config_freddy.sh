@@ -3,7 +3,8 @@
 # Set your Phrase project ID
 PROJECT_ID="15d32bafd4ffe92f156bcca0549a07e6"
 
-# Define locales and paths
+# Define paths and locales
+SOURCE_ROOT="./instashopper-android/shared"
 SOURCE_PATH="./instashopper-android/shared/**/*.xml"
 TARGET_LOCALES=("es-rUS" "fr-rCA")
 IGNORE_LOCALE_FOLDERS=("values-es-rUS" "values-fr-rCA")
