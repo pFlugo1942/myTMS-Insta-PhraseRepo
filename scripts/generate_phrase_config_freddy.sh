@@ -4,7 +4,7 @@
 PROJECT_ID="15d32bafd4ffe92f156bcca0549a07e6"
 
 # Define the root of your source files
-SOURCE_GLOB="/instashopper-android/shared/**/*.json"
+SOURCE_GLOB="/instashopper-android/shared/**/*.xml"
 SOURCE_ROOT="/instashopper-android/shared"
 TARGET_LOCALES=("es-rUS" "fr-rCA")
 IGNORE_LOCALE_FOLDERS=("values-es-rUS" "values-fr-rCA")
