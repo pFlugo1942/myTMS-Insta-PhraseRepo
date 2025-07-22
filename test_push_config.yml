@@ -73,328 +73,321 @@ phrase:
         update_translations: true
         tags: folder_10
         unique_id: folder_10
-    - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values-en/strings.xml
+    - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values-fr-CA/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_11
         unique_id: folder_11
-    - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values-fr-CA/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-es-US/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_12
         unique_id: folder_12
-    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-es-US/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_13
         unique_id: folder_13
-    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-en/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_14
         unique_id: folder_14
-    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-en/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-fr-CA/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_15
         unique_id: folder_15
-    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-fr-CA/strings.xml
+    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-es-US/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_16
         unique_id: folder_16
-    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-es-US/strings.xml
+    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_17
         unique_id: folder_17
-    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values/strings.xml
+    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-en/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_18
         unique_id: folder_18
-    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-en/strings.xml
+    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-fr-CA/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_19
         unique_id: folder_19
-    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-fr-CA/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-es-US/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_20
         unique_id: folder_20
-    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-es-US/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_21
         unique_id: folder_21
-    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-en/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_22
         unique_id: folder_22
-    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-en/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-fr-CA/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_23
         unique_id: folder_23
-    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-fr-CA/strings.xml
+    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-es-US/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_24
         unique_id: folder_24
-    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-es-US/strings.xml
+    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_25
         unique_id: folder_25
-    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values/strings.xml
+    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-en/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_26
         unique_id: folder_26
-    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-en/strings.xml
+    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-fr-CA/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_27
         unique_id: folder_27
-    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-fr-CA/strings.xml
+    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-es-US/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_28
         unique_id: folder_28
-    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-es-US/strings.xml
+    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_29
         unique_id: folder_29
-    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values/strings.xml
+    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-en/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_30
         unique_id: folder_30
-    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-en/strings.xml
+    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-fr-CA/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_31
         unique_id: folder_31
-    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-fr-CA/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-es-US/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_32
         unique_id: folder_32
-    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-es-US/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_33
         unique_id: folder_33
-    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-en/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_34
         unique_id: folder_34
-    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-en/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-fr-CA/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_35
         unique_id: folder_35
-    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-fr-CA/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-es-US/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_36
         unique_id: folder_36
-    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-es-US/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_37
         unique_id: folder_37
-    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-en/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_38
         unique_id: folder_38
-    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-en/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-fr-CA/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_39
         unique_id: folder_39
-    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-fr-CA/strings.xml
+    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-es-US/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_40
         unique_id: folder_40
-    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-es-US/strings.xml
+    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_41
         unique_id: folder_41
-    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values/strings.xml
+    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-en/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_42
         unique_id: folder_42
-    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-en/strings.xml
+    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-fr-CA/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_43
         unique_id: folder_43
-    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-fr-CA/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-es-US/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_44
         unique_id: folder_44
-    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-es-US/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_45
         unique_id: folder_45
-    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-en/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_46
         unique_id: folder_46
-    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-en/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-fr-CA/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_47
         unique_id: folder_47
-    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-fr-CA/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-es-US/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_48
         unique_id: folder_48
-    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-es-US/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_49
         unique_id: folder_49
-    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-en/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_50
         unique_id: folder_50
-    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-en/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-fr-CA/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_51
         unique_id: folder_51
-    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-fr-CA/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-es-US/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_52
         unique_id: folder_52
-    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-es-US/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_53
         unique_id: folder_53
-    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-en/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_54
         unique_id: folder_54
-    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-en/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-fr-CA/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_55
         unique_id: folder_55
-    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-fr-CA/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: folder_56
-        unique_id: folder_56
   pull:
       targets:
     - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values-es-US-<android_code>/strings.xml
@@ -437,187 +430,183 @@ phrase:
       params:
         file_format: xml
         tags: folder_10
-    - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values-en-<android_code>/strings.xml
-      params:
-        file_format: xml
-        tags: folder_11
     - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values-fr-CA-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_12
+        tags: folder_11
     - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-es-US-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_13
+        tags: folder_12
     - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_14
+        tags: folder_13
     - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-en-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_15
+        tags: folder_14
     - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-fr-CA-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_16
+        tags: folder_15
     - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-es-US-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_17
+        tags: folder_16
     - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_18
+        tags: folder_17
     - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-en-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_19
+        tags: folder_18
     - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-fr-CA-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_20
+        tags: folder_19
     - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-es-US-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_21
+        tags: folder_20
     - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_22
+        tags: folder_21
     - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-en-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_23
+        tags: folder_22
     - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-fr-CA-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_24
+        tags: folder_23
     - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-es-US-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_25
+        tags: folder_24
     - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_26
+        tags: folder_25
     - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-en-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_27
+        tags: folder_26
     - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-fr-CA-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_28
+        tags: folder_27
     - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-es-US-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_29
+        tags: folder_28
     - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_30
+        tags: folder_29
     - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-en-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_31
+        tags: folder_30
     - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-fr-CA-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_32
+        tags: folder_31
     - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-es-US-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_33
+        tags: folder_32
     - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_34
+        tags: folder_33
     - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-en-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_35
+        tags: folder_34
     - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-fr-CA-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_36
+        tags: folder_35
     - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-es-US-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_37
+        tags: folder_36
     - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_38
+        tags: folder_37
     - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-en-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_39
+        tags: folder_38
     - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-fr-CA-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_40
+        tags: folder_39
     - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-es-US-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_41
+        tags: folder_40
     - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_42
+        tags: folder_41
     - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-en-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_43
+        tags: folder_42
     - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-fr-CA-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_44
+        tags: folder_43
     - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-es-US-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_45
+        tags: folder_44
     - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_46
+        tags: folder_45
     - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-en-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_47
+        tags: folder_46
     - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-fr-CA-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_48
+        tags: folder_47
     - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-es-US-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_49
+        tags: folder_48
     - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_50
+        tags: folder_49
     - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-en-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_51
+        tags: folder_50
     - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-fr-CA-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_52
+        tags: folder_51
     - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-es-US-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_53
+        tags: folder_52
     - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_54
+        tags: folder_53
     - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-en-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_55
+        tags: folder_54
     - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-fr-CA-<android_code>/strings.xml
       params:
         file_format: xml
-        tags: folder_56
+        tags: folder_55
