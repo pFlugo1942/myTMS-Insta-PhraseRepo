@@ -3,11 +3,6 @@ phrase:
   file_format: xml
   push:
     sources:
-      - file: ./instashopper-android/shared/**/*.xml
-        params:
-          locale_id: en
-          update_translations: true
-          tags: "test-tag"
     ignore:
       - '**/values-es-rUS/**'
       - '**/values-fr-rCA/**'
