@@ -3,8 +3,9 @@
 # Set your Phrase project ID
 PROJECT_ID="15d32bafd4ffe92f156bcca0549a07e6"
 
-# Define locales and paths
-SOURCE_PATH="./instashopper-android/shared/**/*.xml"
+# Define the root of your source files
+SOURCE_GLOB="src/content/en/**/*.json"
+SOURCE_ROOT="src/content/en"
 TARGET_LOCALES=("es-rUS" "fr-rCA")
 IGNORE_LOCALE_FOLDERS=("values-es-rUS" "values-fr-rCA")
 
@@ -15,15 +16,23 @@ phrase:
   file_format: xml
   push:
     sources:
-      - file: $SOURCE_PATH
+EOF
+
+# Add all matching source files explicitly
+find "$SOURCE_ROOT" -type f -name "*.xml" | sort | while read -r file; do
+  cat <<EOF >> .freddy-phrase.yml
+      - file: ./${file}
         params:
           locale_id: en
           update_translations: true
-          tags: "test-tag"
+EOF
+done
+
+# Add ignore paths
+cat <<EOF >> .freddy-phrase.yml
     ignore:
 EOF
 
-# Add ignored folders
 for locale in "${IGNORE_LOCALE_FOLDERS[@]}"; do
   echo "      - '**/${locale}/**'" >> .freddy-phrase.yml
 done
