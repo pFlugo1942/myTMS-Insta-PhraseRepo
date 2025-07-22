@@ -1,6 +1,6 @@
 phrase:
   project_id: 15d32bafd4ffe92f156bcca0549a07e6
-  file_format: xml
+
   push:
     - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values/strings.xml
       params:
