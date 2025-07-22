@@ -8,9 +8,10 @@ SOURCE_ROOT="./instashopper-android/shared"
 SOURCE_PATH="./instashopper-android/shared/**/*.xml"
 TARGET_LOCALES=("es-rUS" "fr-rCA")
 IGNORE_LOCALE_FOLDERS=("values-es-rUS" "values-fr-rCA")
+OUTPUT_FILE=".new-test-phrase.yml"
 
 # Start config file
-cat <<EOF > .new-test-phrase.yml
+cat <<EOF > "$OUTPUT_FILE"
 phrase:
   project_id: $PROJECT_ID
   file_format: xml
@@ -18,33 +19,32 @@ phrase:
     sources:
 EOF
 
-# Add all matching source files explicitly
-find "$SOURCE_ROOT" -type f -name "*.xml" | sort | while read -r file; do
-  rel_path="./${file}"
-  echo "📁 Processing: ${rel_path}"
-
-  cat <<EOF >> .new-test-phrase.yml
-      - file: ${rel_path}
-        params:
-          locale_id: en
-          update_translations: true
+# Find .xml files NOT in locale-specific 'values-' directories (like values-es, values-fr-rCA, etc.)
+while IFS= read -r xml_file; do
+  # Append to YAML with formatting
+  cat >> "$OUTPUT_FILE" <<EOF
+    - file: $xml_file
+      params:
+        file_format: android_xml
+        locale_id: en
+        update_translations: true
 EOF
-done
+done < <(find "$SOURCE_ROOT" -type f -name "*.xml")
 
 # Add ignored folders
-echo "    ignore:" >> .new-test-phrase.yml
+echo "    ignore:" >> "$OUTPUT_FILE"
 for locale in "${IGNORE_LOCALE_FOLDERS[@]}"; do
-  echo "      - '**/${locale}/**'" >> .new-test-phrase.yml
+  echo "      - '**/${locale}/**'" >> "$OUTPUT_FILE"
 done
 
 # Add pull targets
-cat <<EOF >> .new-test-phrase.yml
+cat <<EOF >> "$OUTPUT_FILE"
   pull:
     targets:
 EOF
 
 for locale in "${TARGET_LOCALES[@]}"; do
-  cat <<EOF >> .new-test-phrase.yml
+  cat <<EOF >> "$OUTPUT_FILE"
       - file: ./instashopper-android/shared/content/${locale}/strings.xml
         params:
           locale_id: ${locale}
