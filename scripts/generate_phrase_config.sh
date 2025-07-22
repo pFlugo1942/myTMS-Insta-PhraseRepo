@@ -4,10 +4,10 @@
 base_dir="./instashopper-android/shared"
 
 # Initialize the configuration file
-echo "phrase:" > ./push_config.yml
-echo "  project_id: 15d32bafd4ffe92f156bcca0549a07e6" >> ./push_config.yml
-echo "  file_format: xml" >> ./push_config.yml
-echo "  push:" >> ./push_config.yml
+echo "phrase:" > ./freddy-push_config.yml
+echo "  project_id: 15d32bafd4ffe92f156bcca0549a07e6" >> ./freddy-push_config.yml
+echo "  file_format: xml" >> ./freddy-push_config.yml
+echo "  push:" >> ./freddy-push_config.yml
 
 # Initialize an ID counter for unique identifiers
 counter=1
@@ -29,12 +29,22 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     # Increment the counter
     ((counter++))
     # Add the dynamic push configuration to the YAML file for non-locale folders
-    echo "    - file: $folder_path/$file_name" >> ./push_config.yml
-    echo "      params:" >> ./push_config.yml
-    echo "        file_format: xml" >> ./push_config.yml
-    echo "        locale_id: en" >> ./push_config.yml
-    echo "        update_translations: true" >> ./push_config.yml
-    echo "        tags: $folder_name" >> ./push_config.yml
-    echo "        unique_id: $unique_id" >> ./push_config.yml
+    echo "    - file: $folder_path/$file_name" >> ./freddy-push_config.yml
+    echo "      params:" >> ./freddy-push_config.yml
+    echo "        file_format: xml" >> ./freddy-push_config.yml
+    echo "        locale_id: en" >> ./freddy-push_config.yml
+    echo "        update_translations: true" >> ./freddy-push_config.yml
+    echo "        tags: $folder_name $unique_id" >> ./freddy-push_config.yml
+    echo "        unique_id: $unique_id" >> ./freddy-push_config.yml
     echo "----------------------"
 done
+
+# Git operations
+git add ./freddy-push_config.yml
+
+if git diff --cached --quiet; then
+  echo "ℹ️  No changes to commit."
+else
+  git commit -m "Add/update .freddy-phrase.yml for Phrase Strings integration"
+  echo "✅ Changes committed to Git."
+fi
