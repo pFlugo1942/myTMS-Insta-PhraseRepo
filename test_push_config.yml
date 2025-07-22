@@ -108,13 +108,6 @@ phrase:
         update_translations: true
         tags: folder_15
         unique_id: folder_15
-    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-<android_code>/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: folder_16
-        unique_id: folder_16
   pull:
       targets:
     - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values-<android_code>/strings.xml
@@ -177,7 +170,3 @@ phrase:
       params:
         file_format: xml
         tags: folder_15
-    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-<android_code>-<android_code>/strings.xml
-      params:
-        file_format: xml
-        tags: folder_16
