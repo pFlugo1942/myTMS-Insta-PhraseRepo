@@ -77,7 +77,7 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     ((counter++))
 
     # Add the dynamic push configuration to the YAML file
-    echo "    - file: $folder_path-<locale_code>/$file_name" >> ./test_push_config.yml
+    echo "    - file: $folder_path-<android_code>/$file_name" >> ./test_push_config.yml
     echo "      params:" >> ./test_push_config.yml
     echo "        file_format: xml" >> ./test_push_config.yml
     echo "        tags: $unique_id" >> ./test_push_config.yml
