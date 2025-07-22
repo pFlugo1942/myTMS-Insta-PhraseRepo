@@ -9,7 +9,7 @@ TARGET_LOCALES=("es-rUS" "fr-rCA")
 IGNORE_LOCALE_FOLDERS=("values-es-rUS" "values-fr-rCA")
 
 # Start writing the config
-cat <<EOF > .freddy-test-phrase.yml
+cat <<EOF > .test-push_config.yml
 phrase:
   project_id: $PROJECT_ID
   file_format: xml
@@ -24,17 +24,17 @@ EOF
 
 # Add ignored folders
 for locale in "${IGNORE_LOCALE_FOLDERS[@]}"; do
-  echo "      - '**/${locale}/**'" >> .freddy-test-phrase.yml
+  echo "      - '**/${locale}/**'" >> .test-push_config.yml
 done
 
 # Add pull targets
-cat <<EOF >> .freddy-test-phrase.yml
+cat <<EOF >> .test-push_config.yml
   pull:
     targets:
 EOF
 
 for locale in "${TARGET_LOCALES[@]}"; do
-  cat <<EOF >> .freddy-test-phrase.yml
+  cat <<EOF >> .test-push_config.yml
       - file: ./instashopper-android/shared/**/content/${locale}/strings.xml
         params:
           locale_id: ${locale}
@@ -43,15 +43,15 @@ EOF
 done
 
 # Confirm file creation
-echo "✅ .freddy-test-phrase.yml has been generated."
+echo "✅ .test-push_config.yml has been generated."
 
 # Git operations
-git add .freddy-test-phrase.yml
+git add .test-push_config.yml
 
 if git diff --cached --quiet; then
   echo "ℹ️  No changes to commit."
 else
-  git commit -m "Add/update .freddy-test-phrase.yml for Phrase Strings integration"
+  git commit -m "Add/update .test-push_config.yml for Phrase Strings integration"
   echo "✅ Changes committed to Git."
 fi
 
