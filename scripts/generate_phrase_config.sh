@@ -46,6 +46,7 @@ find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
     echo "----------------------"
 done
 
+# Start ofo the Pull section
 echo "  pull:" >> ./test_push_config.yml
 echo "      targets:" >> ./test_push_config.yml
 # Initialize an ID counter for unique identifiers
