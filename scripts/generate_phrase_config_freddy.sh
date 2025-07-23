@@ -6,6 +6,7 @@ config_file="./freddy_test_push_config.yml"
 project_id="15d32bafd4ffe92f156bcca0549a07e6"
 excluded_folders=("values-es-rUS" "values-fr-rCA")
 
+
 # Initialize YAML config
 cat > "$config_file" <<EOF
 phrase:
