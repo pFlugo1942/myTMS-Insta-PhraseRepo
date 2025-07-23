@@ -38,7 +38,7 @@ append_yaml_block() {
   local file_name folder_path folder_name unique_id
 
   folder_path=$(dirname "$file_path")
-  folder_path_strip="${folder_path#./}"
+  folder_path_strip="${folder_path//\//}"
   file_name=$(basename "$file_path")
   folder_name=$(basename "$folder_path")
   unique_id="folder_$counter"
