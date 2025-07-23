@@ -136,20 +136,13 @@ phrase:
         update_translations: true
         tags: folder_19
         unique_id: folder_19
-    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-en/strings.xml
+    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-fr-CA/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: folder_20
         unique_id: folder_20
-    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-fr-CA/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: folder_21
-        unique_id: folder_21
   pull:
       targets:
     - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values-<android_code>/strings.xml
@@ -247,13 +240,8 @@ phrase:
         file_format: xml
         locale_id: <locale_code>
         tags: folder_19
-    - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-en-<android_code>/strings.xml
-      params:
-        file_format: xml
-        locale_id: <locale_code>
-        tags: folder_20
     - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-fr-CA-<android_code>/strings.xml
       params:
         file_format: xml
         locale_id: <locale_code>
-        tags: folder_21
+        tags: folder_20
