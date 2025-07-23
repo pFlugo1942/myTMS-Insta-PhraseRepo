@@ -103,8 +103,7 @@ phrase:
 
   pull:
       targets:
-      - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values-<android_code>/strings.xml
+      - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values-<locale_code>/strings.xml
         params:
           file_format: xml
-          locale_id: <locale_code>
           tags: folder_1
