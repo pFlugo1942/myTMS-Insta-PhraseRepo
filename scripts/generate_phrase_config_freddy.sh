@@ -2,10 +2,15 @@
 
 # Base configuration
 base_dir="./instashopper-android/shared"
-config_file="./freddy_test_push_config.yml"
+config_file="./test_push_freddy_config.yml"
 project_id="15d32bafd4ffe92f156bcca0549a07e6"
 excluded_folders=("values-es-rUS" "values-fr-rCA")
 
+# Define locale to Android code mapping
+declare -A locale_android_map=(
+  ["es-US"]="es-rUS"
+  ["fr-CA"]="fr-rCA"
+)
 
 # Initialize YAML config
 cat > "$config_file" <<EOF
@@ -29,10 +34,8 @@ append_yaml_block() {
   local file_path="$1"
   local locale_id="$2"
   local is_pull="$3"
-  local file_name
-  local folder_path
-  local folder_name
-  local unique_id
+  local android_code="$4"
+  local file_name folder_path folder_name unique_id
 
   folder_path=$(dirname "$file_path")
   file_name=$(basename "$file_path")
@@ -40,7 +43,7 @@ append_yaml_block() {
   unique_id="folder_$counter"
 
   if [[ "$is_pull" == "true" ]]; then
-    echo "    - file: $folder_path-<locale_code>/$file_name" >> "$config_file"
+    echo "    - file: $folder_path-${android_code}/$file_name" >> "$config_file"
   else
     echo "    - file: $folder_path/$file_name" >> "$config_file"
   fi
@@ -85,7 +88,11 @@ while IFS= read -r file_path; do
     echo "⏭️  Skipping (excluded): $file_path"
     continue
   fi
-  append_yaml_block "$file_path" "<locale_code>" "true"
+
+  for locale in "${!locale_android_map[@]}"; do
+    android_code=${locale_android_map[$locale]}
+    append_yaml_block "$file_path" "$locale" "true" "$android_code"
+  done
 done < <(find "$base_dir" -type f -name "*.xml")
 
 # Git operations
