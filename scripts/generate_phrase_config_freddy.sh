@@ -85,12 +85,12 @@ echo "    targets:" >> "$config_file"
 counter=1
 while IFS= read -r file_path; do
   if is_excluded "$file_path"; then
+    echo "⏭️  Skipping (excluded): $file_path"
+    continue
+  fi
   for locale in "${!locale_android_map[@]}"; do
     android_code=${locale_android_map[$locale]}
     append_yaml_block "$file_path" "$locale" "true" "$android_code"
-    continue
-  fi
-    echo "⏭️  Skipping (excluded): $file_path"
 
   done
 done < <(find "$base_dir" -type f -name "*.xml")
