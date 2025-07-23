@@ -35,14 +35,13 @@ append_yaml_block() {
   local locale_id="$2"
   local is_pull="$3"
   local android_code="$4"
-  local file_name folder_path folder_name unique_id
+  local file_name folder_path folder_name
 
   folder_path=$(dirname "$file_path")
   folder_path_strip="${folder_path#./}"         # Remove leading './' if present
   folder_path_strip="${folder_path_strip//\//_}"      # Replace all remaining '/' with '_'  folder_path_strip="${folder_path//\//}"
   file_name=$(basename "$file_path")
   folder_name=$(basename "$folder_path")
-  unique_id="folder_$counter"
 
   if [[ "$is_pull" == "true" ]]; then
     echo "    - file: $folder_path-${android_code}/$file_name" >> "$config_file"
@@ -62,15 +61,12 @@ EOF
 
   cat <<EOF >> "$config_file"
         tags: $folder_path_strip
-        unique_id: $unique_id
 EOF
 
   echo "📄 Processed: $file_path"
-  ((counter++))
 }
 
 # Process push sources
-counter=1
 while IFS= read -r file_path; do
   if is_excluded "$file_path"; then
     echo "⏭️  Skipping (excluded): $file_path"
@@ -84,7 +80,6 @@ echo "  pull:" >> "$config_file"
 echo "    targets:" >> "$config_file"
 
 # Process pull targets
-counter=1
 while IFS= read -r file_path; do
   if is_excluded "$file_path"; then
     echo "⏭️  Skipping (excluded): $file_path"
