@@ -2,7 +2,7 @@
 
 # Base configuration
 base_dir="./instashopper-android/shared"
-config_file="./test_push_freddy_config.yml"
+config_file="./test_freddy_config.yml"
 project_id="15d32bafd4ffe92f156bcca0549a07e6"
 excluded_folders=("values-es-rUS" "values-fr-rCA")
 
@@ -59,7 +59,7 @@ EOF
   fi
 
   cat <<EOF >> "$config_file"
-        tags: $unique_id
+        tags: $folder_path
         unique_id: $unique_id
 EOF
 
