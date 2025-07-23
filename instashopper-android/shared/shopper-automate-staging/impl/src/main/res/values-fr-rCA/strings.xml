@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <string name="app_name_twelve">Exemple d'OTA</string>
-    <string name="app_subtitle_twelve">Salut tout le monde</string>
-    <string name="hello_world_twelve">from Phrase</string>
+    <string name="app_name_twelve">Exemple d’OTA</string>
+    <string name="app_subtitle_twelve">de Phrase</string>
+    <string name="hello_world_twelve">Bonjour le monde</string>
 </resources>
