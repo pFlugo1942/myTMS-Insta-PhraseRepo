@@ -100,10 +100,3 @@ phrase:
         locale_id: en
         update_translations: true
         tags: folder_14
-
-  pull:
-      targets:
-      - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values-<locale_code>/strings.xml
-        params:
-          file_format: xml
-          tags: folder_1
