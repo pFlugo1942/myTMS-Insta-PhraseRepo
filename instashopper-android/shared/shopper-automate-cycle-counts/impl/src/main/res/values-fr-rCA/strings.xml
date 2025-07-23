@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <string name="app_name_six">Exemple d'OTA: Freddy</string>
-    <string name="app_subtitle_six">Salut tout le monde: Freddy</string>
-    <string name="hello_world_six">from Phrase: Freddy</string>
+    <string name="app_name_six">Exemple d’OTA</string>
+    <string name="app_subtitle_six">de Phrase</string>
+    <string name="hello_world_six">Bonjour le monde</string>
 </resources>
