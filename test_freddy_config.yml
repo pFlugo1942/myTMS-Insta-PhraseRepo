@@ -3,222 +3,92 @@ phrase:
   file_format: xml
   push:
     sources:
-    - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: instashopper-android_shared_shopper-automate-cycle-counts_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-batch-trigger/impl/src/main/res/values/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: instashopper-android_shared_shopper-automate-batch-trigger_impl_src_main_res_values
-    - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: instashopper-android_shared_ids-compose_public_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: instashopper-android_shared_shopper-automate-locate_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: instashopper-android_shared_shopper-audit_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: instashopper-android_shared_shopper-automate-scan_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: instashopper-android_shared_shopper-app-health_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: instashopper-android_shared_shopper-achievement-celebration_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: instashopper-android_shared_shopper-automate-scan-simulator_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: instashopper-android_shared_shopper-automate-item-scan_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: instashopper-android_shared_shopper-auth-passkey_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: instashopper-android_shared_shopper-automate-picking_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values/strings.xml
-      params:
-        file_format: xml
-        locale_id: en
-        update_translations: true
-        tags: instashopper-android_shared_shopper-automate-stow-help_impl_src_main_res_values
     - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_shopper-automate-staging_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values/strings.xml
+      params:
+        file_format: xml
+        locale_id: en
+        update_translations: true
+        tags: instashopper-android_shared_shopper-automate-scan-simulator_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values/strings.xml
+      params:
+        file_format: xml
+        locale_id: en
+        update_translations: true
+        tags: instashopper-android_shared_shopper-automate-scan_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values/strings.xml
+      params:
+        file_format: xml
+        locale_id: en
+        update_translations: true
+        tags: instashopper-android_shared_shopper-automate-picking_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values/strings.xml
+      params:
+        file_format: xml
+        locale_id: en
+        update_translations: true
+        tags: instashopper-android_shared_shopper-app-health_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values/strings.xml
+      params:
+        file_format: xml
+        locale_id: en
+        update_translations: true
+        tags: instashopper-android_shared_shopper-audit_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values/strings.xml
+      params:
+        file_format: xml
+        locale_id: en
+        update_translations: true
+        tags: instashopper-android_shared_shopper-achievement-celebration_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-batch-trigger/impl/src/main/res/values/strings.xml
+      params:
+        file_format: xml
+        locale_id: en
+        update_translations: true
+        tags: instashopper-android_shared_shopper-automate-batch-trigger_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values/strings.xml
+      params:
+        file_format: xml
+        locale_id: en
+        update_translations: true
+        tags: instashopper-android_shared_shopper-auth-passkey_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values/strings.xml
+      params:
+        file_format: xml
+        locale_id: en
+        update_translations: true
+        tags: instashopper-android_shared_shopper-automate-stow-help_impl_src_main_res_values
+    - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values/strings.xml
+      params:
+        file_format: xml
+        locale_id: en
+        update_translations: true
+        tags: instashopper-android_shared_ids-compose_public_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values/strings.xml
+      params:
+        file_format: xml
+        locale_id: en
+        update_translations: true
+        tags: instashopper-android_shared_shopper-automate-item-scan_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values/strings.xml
+      params:
+        file_format: xml
+        locale_id: en
+        update_translations: true
+        tags: instashopper-android_shared_shopper-automate-locate_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values/strings.xml
+      params:
+        file_format: xml
+        locale_id: en
+        update_translations: true
+        tags: instashopper-android_shared_shopper-automate-cycle-counts_impl_src_main_res_values
   pull:
     targets:
-    - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values-fr-rCA/strings.xml
-      params:
-        file_format: xml
-        locale_id: fr-CA
-        tags: instashopper-android_shared_shopper-automate-cycle-counts_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values-es-rUS/strings.xml
-      params:
-        file_format: xml
-        locale_id: es-US
-        tags: instashopper-android_shared_shopper-automate-cycle-counts_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-batch-trigger/impl/src/main/res/values-fr-rCA/strings.xml
-      params:
-        file_format: xml
-        locale_id: fr-CA
-        tags: instashopper-android_shared_shopper-automate-batch-trigger_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-batch-trigger/impl/src/main/res/values-es-rUS/strings.xml
-      params:
-        file_format: xml
-        locale_id: es-US
-        tags: instashopper-android_shared_shopper-automate-batch-trigger_impl_src_main_res_values
-    - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values-fr-rCA/strings.xml
-      params:
-        file_format: xml
-        locale_id: fr-CA
-        tags: instashopper-android_shared_ids-compose_public_src_main_res_values
-    - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values-es-rUS/strings.xml
-      params:
-        file_format: xml
-        locale_id: es-US
-        tags: instashopper-android_shared_ids-compose_public_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-fr-rCA/strings.xml
-      params:
-        file_format: xml
-        locale_id: fr-CA
-        tags: instashopper-android_shared_shopper-automate-locate_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-es-rUS/strings.xml
-      params:
-        file_format: xml
-        locale_id: es-US
-        tags: instashopper-android_shared_shopper-automate-locate_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-fr-rCA/strings.xml
-      params:
-        file_format: xml
-        locale_id: fr-CA
-        tags: instashopper-android_shared_shopper-audit_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-es-rUS/strings.xml
-      params:
-        file_format: xml
-        locale_id: es-US
-        tags: instashopper-android_shared_shopper-audit_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-fr-rCA/strings.xml
-      params:
-        file_format: xml
-        locale_id: fr-CA
-        tags: instashopper-android_shared_shopper-automate-scan_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-es-rUS/strings.xml
-      params:
-        file_format: xml
-        locale_id: es-US
-        tags: instashopper-android_shared_shopper-automate-scan_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-fr-rCA/strings.xml
-      params:
-        file_format: xml
-        locale_id: fr-CA
-        tags: instashopper-android_shared_shopper-app-health_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-es-rUS/strings.xml
-      params:
-        file_format: xml
-        locale_id: es-US
-        tags: instashopper-android_shared_shopper-app-health_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-fr-rCA/strings.xml
-      params:
-        file_format: xml
-        locale_id: fr-CA
-        tags: instashopper-android_shared_shopper-achievement-celebration_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-es-rUS/strings.xml
-      params:
-        file_format: xml
-        locale_id: es-US
-        tags: instashopper-android_shared_shopper-achievement-celebration_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-fr-rCA/strings.xml
-      params:
-        file_format: xml
-        locale_id: fr-CA
-        tags: instashopper-android_shared_shopper-automate-scan-simulator_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-es-rUS/strings.xml
-      params:
-        file_format: xml
-        locale_id: es-US
-        tags: instashopper-android_shared_shopper-automate-scan-simulator_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-fr-rCA/strings.xml
-      params:
-        file_format: xml
-        locale_id: fr-CA
-        tags: instashopper-android_shared_shopper-automate-item-scan_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-es-rUS/strings.xml
-      params:
-        file_format: xml
-        locale_id: es-US
-        tags: instashopper-android_shared_shopper-automate-item-scan_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-fr-rCA/strings.xml
-      params:
-        file_format: xml
-        locale_id: fr-CA
-        tags: instashopper-android_shared_shopper-auth-passkey_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-es-rUS/strings.xml
-      params:
-        file_format: xml
-        locale_id: es-US
-        tags: instashopper-android_shared_shopper-auth-passkey_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-fr-rCA/strings.xml
-      params:
-        file_format: xml
-        locale_id: fr-CA
-        tags: instashopper-android_shared_shopper-automate-picking_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-es-rUS/strings.xml
-      params:
-        file_format: xml
-        locale_id: es-US
-        tags: instashopper-android_shared_shopper-automate-picking_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-fr-rCA/strings.xml
-      params:
-        file_format: xml
-        locale_id: fr-CA
-        tags: instashopper-android_shared_shopper-automate-stow-help_impl_src_main_res_values
-    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-es-rUS/strings.xml
-      params:
-        file_format: xml
-        locale_id: es-US
-        tags: instashopper-android_shared_shopper-automate-stow-help_impl_src_main_res_values
     - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-fr-rCA/strings.xml
       params:
         file_format: xml
@@ -229,3 +99,133 @@ phrase:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_shopper-automate-staging_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: xml
+        locale_id: fr-CA
+        tags: instashopper-android_shared_shopper-automate-scan-simulator_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: xml
+        locale_id: es-US
+        tags: instashopper-android_shared_shopper-automate-scan-simulator_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: xml
+        locale_id: fr-CA
+        tags: instashopper-android_shared_shopper-automate-scan_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: xml
+        locale_id: es-US
+        tags: instashopper-android_shared_shopper-automate-scan_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: xml
+        locale_id: fr-CA
+        tags: instashopper-android_shared_shopper-automate-picking_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: xml
+        locale_id: es-US
+        tags: instashopper-android_shared_shopper-automate-picking_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: xml
+        locale_id: fr-CA
+        tags: instashopper-android_shared_shopper-app-health_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: xml
+        locale_id: es-US
+        tags: instashopper-android_shared_shopper-app-health_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: xml
+        locale_id: fr-CA
+        tags: instashopper-android_shared_shopper-audit_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: xml
+        locale_id: es-US
+        tags: instashopper-android_shared_shopper-audit_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: xml
+        locale_id: fr-CA
+        tags: instashopper-android_shared_shopper-achievement-celebration_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: xml
+        locale_id: es-US
+        tags: instashopper-android_shared_shopper-achievement-celebration_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-batch-trigger/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: xml
+        locale_id: fr-CA
+        tags: instashopper-android_shared_shopper-automate-batch-trigger_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-batch-trigger/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: xml
+        locale_id: es-US
+        tags: instashopper-android_shared_shopper-automate-batch-trigger_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: xml
+        locale_id: fr-CA
+        tags: instashopper-android_shared_shopper-auth-passkey_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: xml
+        locale_id: es-US
+        tags: instashopper-android_shared_shopper-auth-passkey_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: xml
+        locale_id: fr-CA
+        tags: instashopper-android_shared_shopper-automate-stow-help_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: xml
+        locale_id: es-US
+        tags: instashopper-android_shared_shopper-automate-stow-help_impl_src_main_res_values
+    - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: xml
+        locale_id: fr-CA
+        tags: instashopper-android_shared_ids-compose_public_src_main_res_values
+    - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: xml
+        locale_id: es-US
+        tags: instashopper-android_shared_ids-compose_public_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: xml
+        locale_id: fr-CA
+        tags: instashopper-android_shared_shopper-automate-item-scan_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: xml
+        locale_id: es-US
+        tags: instashopper-android_shared_shopper-automate-item-scan_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: xml
+        locale_id: fr-CA
+        tags: instashopper-android_shared_shopper-automate-locate_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: xml
+        locale_id: es-US
+        tags: instashopper-android_shared_shopper-automate-locate_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values-fr-rCA/strings.xml
+      params:
+        file_format: xml
+        locale_id: fr-CA
+        tags: instashopper-android_shared_shopper-automate-cycle-counts_impl_src_main_res_values
+    - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values-es-rUS/strings.xml
+      params:
+        file_format: xml
+        locale_id: es-US
+        tags: instashopper-android_shared_shopper-automate-cycle-counts_impl_src_main_res_values
