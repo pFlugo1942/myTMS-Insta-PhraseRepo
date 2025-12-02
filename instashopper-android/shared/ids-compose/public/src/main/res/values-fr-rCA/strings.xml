@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <string name="app_name">Exemple d’OTA - Source de mise à jour continue des tâches</string>
-    <string name="app_subtitle">de Phrase - Source de mise à jour continue des emplois</string>
-    <string name="hello_world">Hello World - Source de mise à jour continue de l’emploi</string>
+    <string name="app_name">Exemple OTA - Source de mise à jour continue des tâches - Freddy</string>
+    <string name="hello_world">Bonjour le monde ! Source de mise à jour continue des tâches : Freddy</string>
+    <string name="app_subtitle">Source de mise à jour continue des tâches : Freddy</string>
 </resources>
