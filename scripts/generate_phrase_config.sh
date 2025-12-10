@@ -1,96 +1,103 @@
 #!/bin/bash
 
-# Specify the base directory
+# Base configuration
 base_dir="./instashopper-android/shared"
+config_file="./test_phrase_config.yml"
+project_id="15d32bafd4ffe92f156bcca0549a07e6"
+excluded_folders=("values-es-rUS" "values-fr-rCA")
 
-# Initialize the configuration file
-echo "phrase:" > ./test_push_config.yml
-echo "  project_id: 15d32bafd4ffe92f156bcca0549a07e6" >> ./test_push_config.yml
-echo "  file_format: xml" >> ./test_push_config.yml
-echo "  push:" >> ./test_push_config.yml
-echo "    sources:" >> ./test_push_config.yml
+# Define locale to Android code mapping
+declare -A locale_android_map=(
+  ["es-US"]="es-rUS"
+  ["fr-CA"]="fr-rCA"
+)
 
-# Initialize an ID counter for unique identifiers
-counter=1
+# Initialize YAML config
+cat > "$config_file" <<EOF
+phrase:
+  project_id: $project_id
+  file_format: xml
+  push:
+    sources:
+EOF
 
-# Loop over all XML files in nested directories
-find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
-    # Skip specific locale folders
-    if [[ "$file_path" == *"values-es-rUS"* || "$file_path" == *"values-fr-rCA"* ]]; then
-        echo "⏭️  Skipping file in excluded folder: $file_path"
-        continue
-    fi
+# Function to check if file is in an excluded folder
+is_excluded() {
+  for excl in "${excluded_folders[@]}"; do
+    [[ "$1" == *"$excl"* ]] && return 0
+  done
+  return 1
+}
 
-    # Get the full folder path
-    folder_path=$(dirname "$file_path")
+# Function to append a YAML block (used for push and pull)
+append_yaml_block() {
+  local file_path="$1"
+  local locale_id="$2"
+  local is_pull="$3"
+  local android_code="$4"
+  local file_name folder_path folder_name
 
-    # Get the file name
-    file_name=$(basename "$file_path")
+  folder_path=$(dirname "$file_path")
+  folder_path_strip="${folder_path#./}"         # Remove leading './' if present
+  folder_path_strip="${folder_path_strip//\//_}"      # Replace all remaining '/' with '_'  folder_path_strip="${folder_path//\//}"
+  file_name=$(basename "$file_path")
+  folder_name=$(basename "$folder_path")
 
-    # Get the folder name (the last directory in the path)
-    folder_name=$(basename "$folder_path")
+  if [[ "$is_pull" == "true" ]]; then
+    echo "    - file: $folder_path-${android_code}/$file_name" >> "$config_file"
+  else
+    echo "    - file: $folder_path/$file_name" >> "$config_file"
+  fi
 
-    # Generate a unique identifier for this folder (using the counter)
-    unique_id="folder_$counter"
+  cat <<EOF >> "$config_file"
+      params:
+        file_format: xml
+        locale_id: $locale_id
+EOF
 
-    # Increment the counter
-    ((counter++))
+  if [[ "$is_pull" != "true" ]]; then
+    echo "        update_translations: true" >> "$config_file"
+  fi
 
-    # Add the dynamic push configuration to the YAML file
-    echo "    - file: $folder_path/$file_name" >> ./test_push_config.yml
-    echo "      params:" >> ./test_push_config.yml
-    echo "        file_format: xml" >> ./test_push_config.yml
-    echo "        locale_id: en" >> ./test_push_config.yml
-    echo "        update_translations: true" >> ./test_push_config.yml
-    echo "        tags: $unique_id" >> ./test_push_config.yml
-    echo "        unique_id: $unique_id" >> ./test_push_config.yml
-    echo "----------------------"
-done
+  cat <<EOF >> "$config_file"
+        tags: $folder_path_strip
+EOF
 
-# Start ofo the Pull section
-echo "  pull:" >> ./test_push_config.yml
-echo "      targets:" >> ./test_push_config.yml
-# Initialize an ID counter for unique identifiers
-counter=1
+  echo "📄 Processed: $file_path"
+}
 
-# Loop over all XML files in nested directories
-find "$base_dir" -type f -name "*.xml" | while read -r file_path; do
-    # Skip specific locale folders
-    if [[ "$file_path" == *"values-es-rUS"* || "$file_path" == *"values-fr-rCA"* ]]; then
-        echo "⏭️  Skipping file in excluded folder: $file_path"
-        continue
-    fi
+# Process push sources
+while IFS= read -r file_path; do
+  if is_excluded "$file_path"; then
+    echo "⏭️  Skipping (excluded): $file_path"
+    continue
+  fi
+  append_yaml_block "$file_path" "en" "false"
+done < <(find "$base_dir" -type f -name "*.xml")
 
-    # Get the full folder path
-    folder_path=$(dirname "$file_path")
+# Begin pull section
+echo "  pull:" >> "$config_file"
+echo "    targets:" >> "$config_file"
 
-    # Get the file name
-    file_name=$(basename "$file_path")
+# Process pull targets
+while IFS= read -r file_path; do
+  if is_excluded "$file_path"; then
+    echo "⏭️  Skipping (excluded): $file_path"
+    continue
+  fi
 
-    # Get the folder name (the last directory in the path)
-    folder_name=$(basename "$folder_path")
-
-    # Generate a unique identifier for this folder (using the counter)
-    unique_id="folder_$counter"
-
-    # Increment the counter
-    ((counter++))
-
-    # Add the dynamic push configuration to the YAML file
-    echo "    - file: $folder_path-<android_code>/$file_name" >> ./test_push_config.yml
-    echo "      params:" >> ./test_push_config.yml
-    echo "        file_format: xml" >> ./test_push_config.yml
-    echo "        locale_id: <locale_code>" >> ./test_push_config.yml
-    echo "        tags: $unique_id" >> ./test_push_config.yml
-    echo "----------------------"
-done
+  for locale in "${!locale_android_map[@]}"; do
+    android_code=${locale_android_map[$locale]}
+    append_yaml_block "$file_path" "$locale" "true" "$android_code"
+  done
+done < <(find "$base_dir" -type f -name "*.xml")
 
 # Git operations
-git add ./test_push_config.yml
+git add "$config_file"
 
 if git diff --cached --quiet; then
   echo "ℹ️  No changes to commit."
 else
-  git commit -m "Add/update .test_push_config.yml for Phrase Strings integration"
+  git commit -m "Add/update $config_file for Phrase Strings integration"
   echo "✅ Changes committed to Git."
 fi
