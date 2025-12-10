@@ -15,11 +15,11 @@ jobs:
 
       - name: Set up script
         run: |
-          chmod +x ./scripts/generate_phrase_config.sh
+          chmod +x ./scripts/generate_phrase_config_freddy.sh
 
       - name: Run script
         run: |
-          ./scripts/generate_phrase_config.sh
+          ./scripts/generate_phrase_config_freddy.sh
 
       - name: Commit generated configuration
         run: |
