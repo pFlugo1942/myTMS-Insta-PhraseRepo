@@ -9,84 +9,98 @@ phrase:
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_shopper-automate-staging_impl_src_main_res_values
+        # source_checksum: 6fc7eea64cb2912f5eb4faf7d2906c1bae3d2a05
     - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_shopper-automate-scan-simulator_impl_src_main_res_values
+        # source_checksum: 0c6e214c8dd9623cf2a21a0f3ac73048c28e0cef
     - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_shopper-automate-scan_impl_src_main_res_values
+        # source_checksum: 243d1a1bec702d6ea1529dcdb0ca8bc19f03717c
     - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_shopper-automate-picking_impl_src_main_res_values
+        # source_checksum: 9324b44be505e9b3ec4eecc03db3562facaeee29
     - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_shopper-app-health_impl_src_main_res_values
+        # source_checksum: a2190ae3d48fc48dee7841938017da6afe9de156
     - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_shopper-audit_impl_src_main_res_values
+        # source_checksum: 3f60043b3e1eb8cd294658d779a512f7961d2b1d
     - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_shopper-achievement-celebration_impl_src_main_res_values
+        # source_checksum: 06069ce29f572a12c0fcd518b4cedf9814a7af66
     - file: ./instashopper-android/shared/shopper-automate-batch-trigger/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_shopper-automate-batch-trigger_impl_src_main_res_values
+        # source_checksum: 8dc5864bcef19cd4a436a12955a5d6b28a32ebd9
     - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_shopper-auth-passkey_impl_src_main_res_values
+        # source_checksum: b65f3b30f30f5ef5f3fc8a9482c2421946b23ad4
     - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_shopper-automate-stow-help_impl_src_main_res_values
+        # source_checksum: 06e2b52095f9f3343a159deee5b88c5e8ac5f75f
     - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_ids-compose_public_src_main_res_values
+        # source_checksum: 42655c79d8caef8ede908b07434f7f26c1013c2a
     - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_shopper-automate-item-scan_impl_src_main_res_values
+        # source_checksum: e3b81bc421bb760d3c4bc5cd7f574b7d9c78978b
     - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_shopper-automate-locate_impl_src_main_res_values
+        # source_checksum: f53ba80f0437e09f4380304f0db2641363351444
     - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_shopper-automate-cycle-counts_impl_src_main_res_values
+        # source_checksum: b4f59de9ed29997018a4407ca7c907318d03c9fb
   pull:
     targets:
     - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-fr-rCA/strings.xml
@@ -94,138 +108,166 @@ phrase:
         file_format: xml
         locale_id: fr-CA
         tags: instashopper-android_shared_shopper-automate-staging_impl_src_main_res_values
+        # source_checksum: 6fc7eea64cb2912f5eb4faf7d2906c1bae3d2a05
     - file: ./instashopper-android/shared/shopper-automate-staging/impl/src/main/res/values-es-rUS/strings.xml
       params:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_shopper-automate-staging_impl_src_main_res_values
+        # source_checksum: 6fc7eea64cb2912f5eb4faf7d2906c1bae3d2a05
     - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-fr-rCA/strings.xml
       params:
         file_format: xml
         locale_id: fr-CA
         tags: instashopper-android_shared_shopper-automate-scan-simulator_impl_src_main_res_values
+        # source_checksum: 0c6e214c8dd9623cf2a21a0f3ac73048c28e0cef
     - file: ./instashopper-android/shared/shopper-automate-scan-simulator/impl/src/main/res/values-es-rUS/strings.xml
       params:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_shopper-automate-scan-simulator_impl_src_main_res_values
+        # source_checksum: 0c6e214c8dd9623cf2a21a0f3ac73048c28e0cef
     - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-fr-rCA/strings.xml
       params:
         file_format: xml
         locale_id: fr-CA
         tags: instashopper-android_shared_shopper-automate-scan_impl_src_main_res_values
+        # source_checksum: 243d1a1bec702d6ea1529dcdb0ca8bc19f03717c
     - file: ./instashopper-android/shared/shopper-automate-scan/impl/src/main/res/values-es-rUS/strings.xml
       params:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_shopper-automate-scan_impl_src_main_res_values
+        # source_checksum: 243d1a1bec702d6ea1529dcdb0ca8bc19f03717c
     - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-fr-rCA/strings.xml
       params:
         file_format: xml
         locale_id: fr-CA
         tags: instashopper-android_shared_shopper-automate-picking_impl_src_main_res_values
+        # source_checksum: 9324b44be505e9b3ec4eecc03db3562facaeee29
     - file: ./instashopper-android/shared/shopper-automate-picking/impl/src/main/res/values-es-rUS/strings.xml
       params:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_shopper-automate-picking_impl_src_main_res_values
+        # source_checksum: 9324b44be505e9b3ec4eecc03db3562facaeee29
     - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-fr-rCA/strings.xml
       params:
         file_format: xml
         locale_id: fr-CA
         tags: instashopper-android_shared_shopper-app-health_impl_src_main_res_values
+        # source_checksum: a2190ae3d48fc48dee7841938017da6afe9de156
     - file: ./instashopper-android/shared/shopper-app-health/impl/src/main/res/values-es-rUS/strings.xml
       params:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_shopper-app-health_impl_src_main_res_values
+        # source_checksum: a2190ae3d48fc48dee7841938017da6afe9de156
     - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-fr-rCA/strings.xml
       params:
         file_format: xml
         locale_id: fr-CA
         tags: instashopper-android_shared_shopper-audit_impl_src_main_res_values
+        # source_checksum: 3f60043b3e1eb8cd294658d779a512f7961d2b1d
     - file: ./instashopper-android/shared/shopper-audit/impl/src/main/res/values-es-rUS/strings.xml
       params:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_shopper-audit_impl_src_main_res_values
+        # source_checksum: 3f60043b3e1eb8cd294658d779a512f7961d2b1d
     - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-fr-rCA/strings.xml
       params:
         file_format: xml
         locale_id: fr-CA
         tags: instashopper-android_shared_shopper-achievement-celebration_impl_src_main_res_values
+        # source_checksum: 06069ce29f572a12c0fcd518b4cedf9814a7af66
     - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-es-rUS/strings.xml
       params:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_shopper-achievement-celebration_impl_src_main_res_values
+        # source_checksum: 06069ce29f572a12c0fcd518b4cedf9814a7af66
     - file: ./instashopper-android/shared/shopper-automate-batch-trigger/impl/src/main/res/values-fr-rCA/strings.xml
       params:
         file_format: xml
         locale_id: fr-CA
         tags: instashopper-android_shared_shopper-automate-batch-trigger_impl_src_main_res_values
+        # source_checksum: 8dc5864bcef19cd4a436a12955a5d6b28a32ebd9
     - file: ./instashopper-android/shared/shopper-automate-batch-trigger/impl/src/main/res/values-es-rUS/strings.xml
       params:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_shopper-automate-batch-trigger_impl_src_main_res_values
+        # source_checksum: 8dc5864bcef19cd4a436a12955a5d6b28a32ebd9
     - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-fr-rCA/strings.xml
       params:
         file_format: xml
         locale_id: fr-CA
         tags: instashopper-android_shared_shopper-auth-passkey_impl_src_main_res_values
+        # source_checksum: b65f3b30f30f5ef5f3fc8a9482c2421946b23ad4
     - file: ./instashopper-android/shared/shopper-auth-passkey/impl/src/main/res/values-es-rUS/strings.xml
       params:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_shopper-auth-passkey_impl_src_main_res_values
+        # source_checksum: b65f3b30f30f5ef5f3fc8a9482c2421946b23ad4
     - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-fr-rCA/strings.xml
       params:
         file_format: xml
         locale_id: fr-CA
         tags: instashopper-android_shared_shopper-automate-stow-help_impl_src_main_res_values
+        # source_checksum: 06e2b52095f9f3343a159deee5b88c5e8ac5f75f
     - file: ./instashopper-android/shared/shopper-automate-stow-help/impl/src/main/res/values-es-rUS/strings.xml
       params:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_shopper-automate-stow-help_impl_src_main_res_values
+        # source_checksum: 06e2b52095f9f3343a159deee5b88c5e8ac5f75f
     - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values-fr-rCA/strings.xml
       params:
         file_format: xml
         locale_id: fr-CA
         tags: instashopper-android_shared_ids-compose_public_src_main_res_values
+        # source_checksum: 42655c79d8caef8ede908b07434f7f26c1013c2a
     - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values-es-rUS/strings.xml
       params:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_ids-compose_public_src_main_res_values
+        # source_checksum: 42655c79d8caef8ede908b07434f7f26c1013c2a
     - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-fr-rCA/strings.xml
       params:
         file_format: xml
         locale_id: fr-CA
         tags: instashopper-android_shared_shopper-automate-item-scan_impl_src_main_res_values
+        # source_checksum: e3b81bc421bb760d3c4bc5cd7f574b7d9c78978b
     - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-es-rUS/strings.xml
       params:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_shopper-automate-item-scan_impl_src_main_res_values
+        # source_checksum: e3b81bc421bb760d3c4bc5cd7f574b7d9c78978b
     - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-fr-rCA/strings.xml
       params:
         file_format: xml
         locale_id: fr-CA
         tags: instashopper-android_shared_shopper-automate-locate_impl_src_main_res_values
+        # source_checksum: f53ba80f0437e09f4380304f0db2641363351444
     - file: ./instashopper-android/shared/shopper-automate-locate/impl/src/main/res/values-es-rUS/strings.xml
       params:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_shopper-automate-locate_impl_src_main_res_values
+        # source_checksum: f53ba80f0437e09f4380304f0db2641363351444
     - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values-fr-rCA/strings.xml
       params:
         file_format: xml
         locale_id: fr-CA
         tags: instashopper-android_shared_shopper-automate-cycle-counts_impl_src_main_res_values
+        # source_checksum: b4f59de9ed29997018a4407ca7c907318d03c9fb
     - file: ./instashopper-android/shared/shopper-automate-cycle-counts/impl/src/main/res/values-es-rUS/strings.xml
       params:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_shopper-automate-cycle-counts_impl_src_main_res_values
+        # source_checksum: b4f59de9ed29997018a4407ca7c907318d03c9fb
