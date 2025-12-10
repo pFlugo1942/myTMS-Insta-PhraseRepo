@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <string name="app_name_two">Exemple d’OTA - Mise à l’essai de l’approche de travail continu planifié</string>
-    <string name="app_subtitle_two">de Phrase - Mise à l’essai de l’approche de travail continu planifié</string>
-    <string name="hello_world_two">Hello World - Mise à l’essai de l’approche de travail continu planifié</string>
+    <string name="app_name_two">Exemple OTA - Test de l'approche de travail continu programmé - Miklos</string>
+    <string name="hello_world_two">Bonjour le monde - Test de l'approche de travail continu programmé</string>
+    <string name="app_subtitle_two">de Phrase - Test de l'approche de travail continu programmé</string>
 </resources>
