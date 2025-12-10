@@ -79,7 +79,7 @@ phrase:
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_ids-compose_public_src_main_res_values
-        # source_checksum: 42655c79d8caef8ede908b07434f7f26c1013c2a
+        # source_checksum: 7145a0bf27258b7602a4f958c3df528490102097
     - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
@@ -228,13 +228,13 @@ phrase:
         file_format: xml
         locale_id: fr-CA
         tags: instashopper-android_shared_ids-compose_public_src_main_res_values
-        # source_checksum: 42655c79d8caef8ede908b07434f7f26c1013c2a
+        # source_checksum: 7145a0bf27258b7602a4f958c3df528490102097
     - file: ./instashopper-android/shared/ids-compose/public/src/main/res/values-es-rUS/strings.xml
       params:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_ids-compose_public_src_main_res_values
-        # source_checksum: 42655c79d8caef8ede908b07434f7f26c1013c2a
+        # source_checksum: 7145a0bf27258b7602a4f958c3df528490102097
     - file: ./instashopper-android/shared/shopper-automate-item-scan/impl/src/main/res/values-fr-rCA/strings.xml
       params:
         file_format: xml
