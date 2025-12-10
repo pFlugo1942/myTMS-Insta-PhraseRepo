@@ -93,7 +93,7 @@ while IFS= read -r file_path; do
 done < <(find "$base_dir" -type f -name "*.xml")
 
 # Git operations
-git add "$config_file" "$base_dir"
+git add "$config_file"
 
 if git diff --cached --quiet; then
   echo "ℹ️  No changes to commit."
