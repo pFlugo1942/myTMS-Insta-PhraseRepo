@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <string name="app_name">Ejemplo de OTA: origen de actualización continua de trabajos</string>
-    <string name="app_subtitle">from Phrase - Fuente de actualización continua de trabajos</string>
-    <string name="hello_world">Hola Mundo - Fuente de actualización continua de trabajos</string>
+    <string name="app_name">Ejemplo de OTA - Fuente de actualización continua de trabajos - Freddy-Miklos</string>
+    <string name="hello_world">Hello World - Fuente de actualización continua de trabajos - Freddy</string>
+    <string name="app_subtitle">de Frase - Fuente de actualización continua del trabajo - Freddy</string>
 </resources>
