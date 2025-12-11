@@ -1,16 +1,27 @@
 #!/bin/bash
 
-# Base configuration
-base_dir="./instashopper-android/shared"
-config_file="./test_freddy_config.yml"
-project_id="15d32bafd4ffe92f156bcca0549a07e6"
-excluded_folders=("values-es-rUS" "values-fr-rCA")
+set -euo pipefail
 
-# Define locale to Android code mapping
-declare -A locale_android_map=(
-  ["es-US"]="es-rUS"
-  ["fr-CA"]="fr-rCA"
-)
+########################################
+# Load configuration from repo root
+########################################
+
+# Find repo root via git (assumes script is run inside a git repo)
+REPO_ROOT=$(git rev-parse --show-toplevel)
+
+CONFIG_PATH="$REPO_ROOT/phrase_android_config.sh"
+
+if [[ ! -f "$CONFIG_PATH" ]]; then
+  echo "❌ Config file not found at: $CONFIG_PATH" >&2
+  exit 1
+fi
+
+# shellcheck source=/dev/null
+source "$CONFIG_PATH"
+
+########################################
+# Functions
+########################################
 
 # Returns a checksum for a file (Linux: sha1sum, macOS: shasum -a 1)
 file_checksum() {
@@ -32,8 +43,9 @@ EOF
 
 # Function to check if file is in an excluded folder
 is_excluded() {
+  local path="$1"
   for excl in "${excluded_folders[@]}"; do
-    [[ "$1" == *"$excl"* ]] && return 0
+    [[ "$path" == *"$excl"* ]] && return 0
   done
   return 1
 }
@@ -44,15 +56,15 @@ append_yaml_block() {
   local locale_id="$2"
   local is_pull="$3"
   local android_code="$4"
-  local file_name folder_path folder_name checksum
+  local file_name folder_path folder_name checksum folder_path_strip
 
   folder_path=$(dirname "$file_path")
-  folder_path_strip="${folder_path#./}"              # Remove leading './'
-  folder_path_strip="${folder_path_strip//\//_}"     # Replace '/' with '_'
+  folder_path_strip="${folder_path#./}"          # Remove leading './'
+  folder_path_strip="${folder_path_strip//\//_}" # Replace '/' with '_'
   file_name=$(basename "$file_path")
   folder_name=$(basename "$folder_path")
 
-  # NEW: compute checksum based on file content
+  # Compute checksum based on file content
   checksum=$(file_checksum "$file_path")
 
   if [[ "$is_pull" == "true" ]]; then
@@ -78,6 +90,10 @@ EOF
 
   echo "📄 Processed: $file_path"
 }
+
+########################################
+# Main logic
+########################################
 
 # Process push sources
 while IFS= read -r file_path; do
