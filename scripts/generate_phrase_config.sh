@@ -2,7 +2,7 @@
 
 # Base configuration
 base_dir="./instashopper-android/shared"
-config_file="./test_phrase_config.yml"
+config_file="./test_freddy_config.yml"
 project_id="15d32bafd4ffe92f156bcca0549a07e6"
 excluded_folders=("values-es-rUS" "values-fr-rCA")
 
@@ -11,6 +11,15 @@ declare -A locale_android_map=(
   ["es-US"]="es-rUS"
   ["fr-CA"]="fr-rCA"
 )
+
+# Returns a checksum for a file (Linux: sha1sum, macOS: shasum -a 1)
+file_checksum() {
+  # Linux:
+  sha1sum "$1" | awk '{print $1}'
+
+  # If you're on macOS and don't have sha1sum, use this instead:
+  # shasum -a 1 "$1" | awk '{print $1}'
+}
 
 # Initialize YAML config
 cat > "$config_file" <<EOF
@@ -35,13 +44,16 @@ append_yaml_block() {
   local locale_id="$2"
   local is_pull="$3"
   local android_code="$4"
-  local file_name folder_path folder_name
+  local file_name folder_path folder_name checksum
 
   folder_path=$(dirname "$file_path")
-  folder_path_strip="${folder_path#./}"         # Remove leading './' if present
-  folder_path_strip="${folder_path_strip//\//_}"      # Replace all remaining '/' with '_'  folder_path_strip="${folder_path//\//}"
+  folder_path_strip="${folder_path#./}"              # Remove leading './'
+  folder_path_strip="${folder_path_strip//\//_}"     # Replace '/' with '_'
   file_name=$(basename "$file_path")
   folder_name=$(basename "$folder_path")
+
+  # NEW: compute checksum based on file content
+  checksum=$(file_checksum "$file_path")
 
   if [[ "$is_pull" == "true" ]]; then
     echo "    - file: $folder_path-${android_code}/$file_name" >> "$config_file"
@@ -61,6 +73,7 @@ EOF
 
   cat <<EOF >> "$config_file"
         tags: $folder_path_strip
+        # source_checksum: $checksum
 EOF
 
   echo "📄 Processed: $file_path"
