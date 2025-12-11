@@ -101,9 +101,8 @@ while IFS= read -r file_path; do
     echo "⏭️  Skipping (excluded): $file_path"
     continue
   fi
-  # PULL (4 args)
-  append_yaml_block "$file_path" "$locale" "true" "$android_code"
-done < <(find "$base_dir" -type f -name "*.xml")
+    append_yaml_block "$file_path" "en" "false" ""   # ← added ""
+  done < <(find "$base_dir" -type f -name "*.xml")
 
 # Begin pull section
 echo "  pull:" >> "$config_file"
