@@ -51,7 +51,7 @@ phrase:
         locale_id: en
         update_translations: true
         tags: instashopper-android_shared_shopper-achievement-celebration_impl_src_main_res_values
-        # source_checksum: 5a993fd60ce6c44ed245414281fcb2b99d3cfaaa
+        # source_checksum: c68f7baf84cdcf57b23b9e8c527439cabf017289
     - file: ./instashopper-android/shared/shopper-automate-batch-trigger/impl/src/main/res/values/strings.xml
       params:
         file_format: xml
@@ -180,13 +180,13 @@ phrase:
         file_format: xml
         locale_id: fr-CA
         tags: instashopper-android_shared_shopper-achievement-celebration_impl_src_main_res_values
-        # source_checksum: 5a993fd60ce6c44ed245414281fcb2b99d3cfaaa
+        # source_checksum: c68f7baf84cdcf57b23b9e8c527439cabf017289
     - file: ./instashopper-android/shared/shopper-achievement-celebration/impl/src/main/res/values-es-rUS/strings.xml
       params:
         file_format: xml
         locale_id: es-US
         tags: instashopper-android_shared_shopper-achievement-celebration_impl_src_main_res_values
-        # source_checksum: 5a993fd60ce6c44ed245414281fcb2b99d3cfaaa
+        # source_checksum: c68f7baf84cdcf57b23b9e8c527439cabf017289
     - file: ./instashopper-android/shared/shopper-automate-batch-trigger/impl/src/main/res/values-fr-rCA/strings.xml
       params:
         file_format: xml
