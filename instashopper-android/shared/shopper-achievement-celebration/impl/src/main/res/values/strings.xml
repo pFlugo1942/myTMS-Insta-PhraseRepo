@@ -2,5 +2,5 @@
 <resources>
     <string name="app_name_one">OTA Example - Testing Scheduled Continuous Job approach - Miklos testing script</string>
     <string name="hello_world_one">Hello World - Testing Scheduled Continuous Job approach - Miklos testing script</string>
-    <string name="app_subtitle_one">from Phrase - Testing Scheduled Continuous Job approach - Miklos</string>
+    <string name="app_subtitle_one">from Phrase - Testing Scheduled Continuous Job approach - Miklos testing script</string>
 </resources>
