@@ -1,0 +1,30 @@
+name: Generate Phrase Config Original
+
+on:
+  push:
+    branches:
+      - main  # Or the branch you want to trigger the action
+
+jobs:
+  generate-config:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up script
+        run: |
+          chmod +x ./scripts/generate_phrase_config_freddy.sh
+
+      - name: Run script
+        run: |
+          ./scripts/generate_phrase_config_freddy.sh
+
+      - name: Commit generated configuration
+        run: |
+          git config --global user.name "pFlugo1942"
+          git config --global user.email "freddy.lugo@phrase.com"
+          git add push_config.yml
+          git commit -m "Auto-generate Phrase config"
+          git push
