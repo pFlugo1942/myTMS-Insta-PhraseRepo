@@ -5,7 +5,7 @@ on:
     branches:
       - main  # Or the branch you want to trigger the action
     paths:
-      - "instashopper-android/shared/**"
+      - "instashopper-android/shared/**" # trigger workflow only for changes within a directory
       
 jobs:
   generate-config:
