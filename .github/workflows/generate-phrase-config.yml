@@ -13,18 +13,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up script
-        run: |
-          chmod +x ./scripts/generate_phrase_config_freddy.sh
-
-      - name: Run script
-        run: |
-          ./scripts/generate_phrase_config_freddy.sh
-
-      - name: Commit generated configuration
+      - name: Configure git user
         run: |
           git config --global user.name "pFlugo1942"
           git config --global user.email "freddy.lugo@phrase.com"
-          git add push_config.yml
-          git commit -m "Auto-generate Phrase config"
+
+      - name: Set up script
+        run: chmod +x ./scripts/generate_phrase_config_freddy.sh
+
+      - name: Run script (generates and commits config_file)
+        run: ./scripts/generate_phrase_config_freddy.sh
+
+      - name: Push changes
+        run: |
           git push
