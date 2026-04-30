@@ -3,7 +3,7 @@
 
 # Base configuration
 base_dir="./instashopper-android/shared"
-config_file="./test_freddy_config.yml"
+config_file="./test_freddy_new_config.yml"
 project_id="15d32bafd4ffe92f156bcca0549a07e6"
 
 # Folders to exclude when scanning for XML files
