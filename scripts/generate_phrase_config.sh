@@ -9,7 +9,7 @@ set -euo pipefail
 # Find repo root via git (assumes script is run inside a git repo)
 REPO_ROOT=$(git rev-parse --show-toplevel)
 
-CONFIG_PATH="$REPO_ROOT/phrase_android_config.sh"
+CONFIG_PATH="$REPO_ROOT/config/phrase_android_config.sh"
 
 if [[ ! -f "$CONFIG_PATH" ]]; then
   echo "❌ Config file not found at: $CONFIG_PATH" >&2
